@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/css/lib/main.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/client.js" afterPath="$PROJECT_DIR$/client/js/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/edit_user.css" afterPath="$PROJECT_DIR$/client/css/edit_user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/edit_user.html" afterPath="$PROJECT_DIR$/client/templates/edit_user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/files_list.html" afterPath="$PROJECT_DIR$/client/templates/files_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/home.js" afterPath="$PROJECT_DIR$/client/template_js/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/layout.html" afterPath="$PROJECT_DIR$/client/templates/layout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/layout.js" afterPath="$PROJECT_DIR$/client/template_js/layout.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/main.css" afterPath="$PROJECT_DIR$/client/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +23,8 @@
     <file path="/app.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384696023794" ignored="false" />
     <file path="/jquery.slimscroll.horizontal.min.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384694438170" ignored="false" />
     <file path="/main.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384696875844" ignored="false" />
-    <file path="/layout.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384721936164" ignored="false" />
-    <file path="/layout.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384723621088" ignored="false" />
+    <file path="/layout.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384725811511" ignored="false" />
+    <file path="/layout.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384725883613" ignored="false" />
     <file path="/files_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384716102017" ignored="false" />
     <file path="/UserModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384701592926" ignored="false" />
     <file path="/EmailModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384716338722" ignored="false" />
@@ -73,7 +68,16 @@
       <file leaf-file-name="layout.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+            <state line="7" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="-4.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/template_js/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,12 +86,21 @@
       <file leaf-file-name="layout.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="144" selection-start="4532" selection-end="4532" vertical-scroll-proportion="0.64705884">
+            <state line="36" column="55" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.3970588">
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="10" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,16 +117,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="82" selection-start="11960" selection-end="11960" vertical-scroll-proportion="3.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="responsive.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/css/lib/responsive.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="1196" selection-start="1196" selection-end="1196" vertical-scroll-proportion="-0.0">
+            <state line="18" column="406" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-5.2">
               <folding />
             </state>
           </provider>
@@ -146,15 +150,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_user.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/edit_user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="414" selection-end="414" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -173,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/template_js/users.js" />
         <option value="$PROJECT_DIR$/client/template_js/users_list.js" />
         <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
         <option value="$PROJECT_DIR$/client/js/models/FileModel.js" />
@@ -186,6 +180,7 @@
         <option value="$PROJECT_DIR$/client/css/edit_user.css" />
         <option value="$PROJECT_DIR$/client/templates/files_list.html" />
         <option value="$PROJECT_DIR$/client/js/client.js" />
+        <option value="$PROJECT_DIR$/client/template_js/home.js" />
         <option value="$PROJECT_DIR$/client/template_js/layout.js" />
         <option value="$PROJECT_DIR$/client/css/main.css" />
         <option value="$PROJECT_DIR$/client/templates/layout.html" />
@@ -508,13 +503,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/js/models/FileModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models/PermissionModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="303" vertical-scroll-proportion="0.0">
@@ -532,13 +520,6 @@
     <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="6" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="53" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -599,23 +580,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/template_js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+        <state line="7" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="-4.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="82" selection-start="11960" selection-end="11960" vertical-scroll-proportion="3.28">
+        <state line="18" column="406" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-5.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="144" selection-start="4532" selection-end="4532" vertical-scroll-proportion="0.64705884">
+        <state line="36" column="55" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.3970588">
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />

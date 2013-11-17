@@ -3,6 +3,12 @@
 
 /** layout HELPERS, EVENTS & CALLBACKS **/
 
+Template.layout.helpers({
+    title: function(){
+        return Session.get('page_title');
+    }
+});
+
 Template.layout.events({
     'click .toggle-sidebar': function(){
         $('#container').toggleClass('sidebar-closed');
@@ -17,6 +23,22 @@ Template.navbar_left.helpers({
     allUsersCount: function(){ return Meteor.users.find().count()+Emails.find().count()},
     usersCount: function(){ return Meteor.users.find().count(); },
     emailsCount: function(){ return Emails.find().count(); }
+});
+
+
+/** page_home HELPERS, EVENTS & CALLBACKS **/
+
+Template.page_home.helpers({
+    nullObj: {user_id: 0, file_id: 0}
+});
+
+
+/** page_title HELPERS, EVENTS & CALLBACKS **/
+
+Template.page_title.helpers({
+    title: function(){
+        return Session.get('page_title');
+    }
 });
 
 
