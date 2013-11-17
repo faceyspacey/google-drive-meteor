@@ -2,6 +2,8 @@
 .edit-user-avatar {
     max-width: 148px;
     max-height: 148px;
+    width: 100%;
+    margin: 10px auto;
     box-shadow: 2px 2px 6px DimGrey;
     -webkit-box-shadow: 2px 2px 6px DimGrey;
     -moz-box-shadow: 2px 2px 6px DimGrey;

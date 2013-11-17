@@ -89,3 +89,4 @@ function getNumOfActiveMenuItem(){
     var num = items.indexOf(activeItem);
     return num > -1 ? num : false;
 }
+
