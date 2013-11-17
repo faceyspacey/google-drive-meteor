@@ -1,0 +1,76 @@
+
+/**
+ *  OLD CSS
+ */
+
+/*
+body {
+    background: #dadada;
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #555;
+    font-size: 13px;
+}
+
+#in-touch-top {
+    width: 100%;
+    height: 32px;
+    background:#545864;
+}
+
+.in-touch-cont {
+    width: 1120px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 12px;
+    color: white;
+    text-align: right;
+}
+
+#nav-top {
+    width: 100%;
+    height: 84px;
+    background: white;
+}
+
+#nav-cont {
+    width: 1120px;
+    height:84px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#main-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px !important;
+    height:84px !important;
+    padding:0 !important;
+    margin:0 !important;
+    background-image: url('/images/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#nav-items {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 800px !important;
+    height:84px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+#container {
+    min-height: 600px;
+    width: 1120px;
+    margin: 0 auto;
+    background: #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+*/

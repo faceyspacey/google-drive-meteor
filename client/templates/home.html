@@ -1,0 +1,8 @@
+<template name="page_home">
+
+    {{#if isInRole 'admin'}}
+        {{>files_list nullObj}}
+        {{>users_list nullObj}}
+    {{/if}}
+
+</template>

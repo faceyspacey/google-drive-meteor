@@ -1,0 +1,45 @@
+<template name="page_edit_user">
+
+    <div class="widget box">
+        <div class="widget-header"><h2>{{user.getName}} <small>permissions</small></h2></div>
+
+        <div class="widget-content">
+            <div class="row">
+                <div class="col-md-2">
+                    <img class="edit-user-avatar img-rounded pull-right" src="{{user.getAvatar}}">
+                </div>
+
+                <div class="col-md-5">
+                    <table id="edit-user-profile" class="table table-striped table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>First Name:</th>
+                                <td>{{user.getAttr 'given_name'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Last Name:</th>
+                                <td>{{user.getAttr 'family_name'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>{{user.getEmail}}</td>
+                            </tr>
+                            <tr>
+                                <th>Gender:</th>
+                                <td>{{user.getAttr 'gender'}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:25px;">
+                <div class="col-md-12">
+                    {{>files_list filesObject}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</template>

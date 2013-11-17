@@ -1,0 +1,73 @@
+
+.table {
+    margin: 0px;
+}
+
+.table .sortable {
+    background-image: url('/images/icons/sort_both.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.table .sorted-asc {
+    background-image: url('/images/icons/sort_asc.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.table .sorted-desc {
+    background-image: url('/images/icons/sort_desc.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.table td {
+    padding: 4px 8px !important;
+    line-height: 30px !important;
+}
+
+.avatar-column,
+.type-icon-column {
+    width: 40px !important;
+    padding: 8px 4px!important;
+    text-align: center;
+}
+
+td.avatar-column,
+td.type-icon-column {
+    padding:0px 2px !important;
+}
+
+.actions-column{
+    width: 150px !important;
+    text-align: center;
+}
+
+.items {
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.items .box-header {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    margin: -10px -10px 0px -10px;
+    font-weight: bold;
+    background: #f9f9f9;
+}
+
+img.user-row-avatar {
+    max-width: 36px;
+    max-height: 36px;
+    margin: 2px;
+}
+img.file-row-icon {
+    max-width: 16px;
+    max-height: 16px;
+    margin: 4px;
+}

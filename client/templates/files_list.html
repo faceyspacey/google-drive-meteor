@@ -1,0 +1,82 @@
+<template name="files_list">
+    <div class="widget box">
+        <div class="widget-header">
+            <div class="col-md-11"><h4>Files</h4></div>
+            {{#if isInRole 'admin'}}
+            <div class="col-md-1 btn btn-default btn-sm files-refresh-btn">
+                Refresh List
+            </div>
+            {{/if}}
+        </div>
+
+        <div class="widget-content">
+            <table class="file-list-table table table-striped table-bordered table-hover">
+                <thead>
+                    <th class="type-icon-column">Type</th>
+                    <th class="sortable {{sorted 'title'}}" data-field="title">Title</th>
+                    <th class="sortable {{sorted 'size'}}" data-field="size">Size</th>
+                    <th class="sortable {{sorted 'createdDate'}}" data-field="createdDate">Created Date</th>
+                    <th class="actions-column">Actions</th>
+                </thead>
+                <tbody>
+                {{#if filesCount null}}
+                    {{#each files null}}
+                        {{#if ../user_id}}
+                            {{>file_row_user}}
+                        {{else}}
+                            {{>file_row_home}}
+                        {{/if}}
+                    {{/each}}
+                {{else}}
+                    {{>empty_file_row}}
+                {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+
+<template name="file_row_home">
+    <tr>
+        <td class="type-icon-column"><img class="file-row-icon" src="{{iconLink}}" /></td>
+        <td><a href="{{alternateLink}}" target="_blank">{{title}}</a></td>
+        <td>{{getFormattedSize}} ({{fileSize}} bytes)</td>
+        <td><time class="timeago" datetime="{{createdDate}}">{{niceTime 'createdDate'}}</time></td>
+        <td class="actions-column">
+            {{#if isInRole 'admin'}}
+                <div class="btn btn-default btn-sm edit-file-btn">Edit File</div>
+            {{else}}
+                <a class="btn btn-sm btn-default" href="{{alternateLink}}" target="_blank">Go to file</a>
+            {{/if}}
+        </td>
+    </tr>
+</template>
+
+<template name="file_row_user">
+    <tr>
+        <td class="type-icon-column"><img class="file-row-icon" src="{{iconLink}}" /></td>
+        <td><a href="{{alternateLink}}" target="_blank">{{title}}</a></td>
+        <td>{{getFormattedSize}} ({{fileSize}} bytes)</td>
+        <td><time class="timeago" datetime="{{createdDate}}">{{niceTime 'createdDate'}}</time></td>
+        <td class="actions-column">
+            {{#if isUserOwner _id}}
+                <div class="btn btn-primary btn-sm" disabled="disabled" >Owner</div>
+            {{else}}
+                {{#if canAdminShareIt _id}}
+                    <div class="btn {{{canDo 'nothing' _id}}} btn-sm can-nothing-btn">&times;</div>
+                    <div class="btn {{{canDo 'view' _id}}} btn-sm can-view-btn">View</div>
+                    <div class="btn {{{canDo 'edit' _id}}} btn-sm can-edit-btn">Edit</div>
+                {{else}}
+                    <div class="btn btn-primary btn-sm" disabled="disabled" >Can not edit it</div>
+                {{/if}}
+            {{/if}}
+        </td>
+    </tr>
+</template>
+
+<template name="empty_file_row">
+    <tr>
+        <td colspan="5"> No matching records found. </td>
+    </tr>
+</template>

@@ -1,0 +1,12 @@
+
+.edit-user-avatar {
+    max-width: 148px;
+    max-height: 148px;
+    box-shadow: 2px 2px 6px DimGrey;
+    -webkit-box-shadow: 2px 2px 6px DimGrey;
+    -moz-box-shadow: 2px 2px 6px DimGrey;
+}
+
+#edit-user-profile th {
+    width: 30%;
+}

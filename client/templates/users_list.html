@@ -1,0 +1,68 @@
+<template name="users_list">
+    <div class="widget box">
+        <div class="widget-header"><h4>Users</h4></div>
+
+        <div class="widget-content">
+            <table id="user-list" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <th class="avatar-column">Avatar</th>
+                    <th class="sortable {{sorted 'getFirstName'}}" data-field="getFirstName">First Name</th>
+                    <th class="sortable {{sorted 'getLastName'}}" data-field="getLastName">Last Name</th>
+                    <th class="sortable {{sorted 'getEmail'}}" data-field="getEmail">Email</th>
+                    <th class="actions-column">Actions</th>
+                </thead>
+                <tbody>
+                {{#if usersCount listParams}}
+                    {{#each users listParams}}
+                        {{#if ../file_id}}
+                            {{>user_row_file}}
+                        {{else}}
+                            {{>user_row_home}}
+                        {{/if}}
+                    {{/each}}
+                {{else}}
+                    {{>empty_user_row}}
+                {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<template name="user_row_home">
+    <tr>
+        <td class="avatar-column"><img class="user-row-avatar" src="{{getAvatar}}" /></td>
+        <td>{{getFirstName}}</td>
+        <td>{{getLastName}}</td>
+        <td>{{getEmail}}</td>
+        <td class="actions-column"><div class="btn btn-default btn-sm edit-user-btn">Edit User</div></td>
+    </tr>
+</template>
+
+<template name="user_row_file">
+    <tr>
+        <td class="avatar-column"><img class="user-row-avatar" src="{{getAvatar}}" /></td>
+        <td>{{getFirstName}}</td>
+        <td>{{getLastName}}</td>
+        <td>{{getEmail}}</td>
+        <td class="actions-column">
+            {{#if isFileOwned _id}}
+                <div class="btn btn-primary btn-sm" disabled="disabled" >Owner</div>
+            {{else}}
+                {{#if canAdminShareIt null}}
+                    <div class="btn {{{canDoWithFile 'nothing' _id}}} btn-sm can-nothing-btn">&times;</div>
+                    <div class="btn {{{canDoWithFile 'view' _id}}} btn-sm can-view-btn">View</div>
+                    <div class="btn {{{canDoWithFile 'edit' _id}}} btn-sm can-edit-btn">Edit</div>
+                {{else}}
+                    <div class="btn btn-primary btn-sm" disabled="disabled" >Can not edit it</div>
+                {{/if}}
+            {{/if}}
+        </td>
+    </tr>
+</template>
+
+<template name="empty_user_row">
+    <tr>
+        <td colspan="5"> No matching records found. </td>
+    </tr>
+</template>

@@ -1,0 +1,39 @@
+<template name="page_edit_file">
+
+    <div class="widget box">
+        <div class="widget-header"><h2>{{file.title}} <small> users' permissions</small></h2></div>
+
+        <div class="widget-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <table id="edit-user-profile" class="table table-striped table-bordered">
+                        <tbody>
+                        <tr>
+                            <th>Extension:</th>
+                            <td><img class="edit-file-icon" src="{{file.iconLink}}" /> {{file.fileExtension}}</td>
+                        </tr>
+                        <tr>
+                            <th>Title:</th>
+                            <td>{{file.title}}</td>
+                        </tr>
+                        <tr>
+                            <th>Size:</th>
+                            <td>{{file.getFormattedSize}} ({{file.fileSize}} bytes)</td>
+                        </tr>
+                        <tr>
+                            <th>Created Date:</th>
+                            <td><time class="timeago" datetime="{{file.createdDate}}">{{file.niceTime 'createdDate'}}</time></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-8">
+                    {{>users_list usersObject}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</template>

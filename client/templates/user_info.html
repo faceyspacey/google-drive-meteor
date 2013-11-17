@@ -1,0 +1,26 @@
+<template name="user_info">
+    <li class="dropdown user">
+        {{#if currentUser}}
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="">
+                <div id="user-info">{{>user_loggedin}}</div>
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a id="logout" href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+            </ul>
+        {{else}}
+            {{#if isGoogleConfigured}}
+                <a id="login" href="#" class="dropdown-toggle" data-toggle="dropdown" style="">
+                    <i class="fa fa-sign-in"></i> Log In with Google
+                </a>
+            {{else}}
+                {{loginButtons align="right"}}
+            {{/if}}
+        {{/if}}
+    </li>
+</template>
+
+<template name="user_loggedin">
+    <img class="user-info-avatar" src="{{currentUser.getAvatar}}"/>
+    <div class="user-info-name">{{currentUser.getName}}</div>
+</template>

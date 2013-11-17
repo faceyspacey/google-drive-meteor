@@ -1,0 +1,41 @@
+<template name="page_users">
+    {{#if parameters.type 'email'}}
+        <div id="add-user-form-btn" class="btn btn-default" style="margin-bottom: 25px;">
+            Add User
+        </div>
+
+        {{#if model}}
+            {{#with model}}
+                {{>user_add_form}}
+            {{/with}}
+        {{/if}}
+    {{/if}}
+
+    {{>users_list parameters}}
+</template>
+
+<template name="user_add_form">
+    <div class="widget box" style="margin-bottom: 25px;">
+        <div class="widget-header">
+            <div class="col-md-11"><h4>Pre-register a user</h4></div>
+            <div class="col-md-1 btn btn-default btn-sm close-dialog-btn"> Close </div>
+        </div>
+
+        <div class="widget-content">
+            <form id="user-add-form" name="userRegisterForm" class="form-horizontal row-border" method="POST">
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Email Address:</label>
+                    <div class="col-md-8">
+                        <input id="userAddForm_email" type="text" name="regular" class="form-control">
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="row">
+                <div class="btn btn-primary col-md-2 col-md-offset-5 add-user-btn">Add Email</div>
+            </div>
+        </div>
+    </div>
+</template>
