@@ -70,9 +70,9 @@ Meteor.startup(function(){
             Meteor.setTimeout(function(){
                 if( Roles.userIsInRole(Meteor.userId(), ['admin']) ){
                     Drive.call('refreshFiles', {cb: function(){
-                        _.each(Files.find().fetch(), function(file){
+                        /*_.each(Files.find().fetch(), function(file){
                             Drive.call('refreshPermissions', {fileId: file._id});
-                        });
+                        });*/
                     }});
                 }
             }, 1000);

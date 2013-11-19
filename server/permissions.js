@@ -55,7 +55,7 @@ Meteor.methods({
                         permId = Permissions.insert({file_id: fileId, user_id: user._id, role: role, perm_id: user.perm_id});
                     else
                         Permissions.update(perm._id, {$set: {role: role}});
-                    permId = perm._id;
+                    permId = permId ? permId : perm._id;
                 }else{
                     //console.log('email', item.role, role);
                     user = Emails.findOne({email: item.emailAddress});
@@ -66,7 +66,7 @@ Meteor.methods({
                             permId = Permissions.insert({file_id: fileId, email: user.email, role: role, perm_id: item.id});
                         else
                             Permissions.update(perm._id, {$set: {role: role}});
-                        permId = perm._id;
+                        permId = permId ? permId : perm._id;
                     }
                 }
 
@@ -76,7 +76,7 @@ Meteor.methods({
                 //console.log(Permissions.find().count());
             });
 
-            
+
             Permissions.find({_id: {$nin: permissions}, file_id: fileId}).forEach(function(perm){ Permissions.remove(perm._id); });
 
         }).run({items: items, fileId: fileId});

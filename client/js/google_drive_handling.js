@@ -43,50 +43,9 @@ Drive = {
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
         var accessToken = gapi.auth.getToken();
+        //console.log('became token', accessToken);
 
-        gapi.client.load('drive', 'v2', function() {
-            var request = gapi.client.request({
-                'path': '/drive/v2/files',
-                'method': 'GET',
-                'params': {
-                    'access_token': accessToken
-                }
-            });
-
-            request.execute(function(resp) {
-                //console.log(resp);
-                Meteor.call('refreshFiles', resp.items);
-            });
-        });
-    },
-    refreshPermissions: function(options){
-        if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
-            return false;
-
-        Drive.refreshUsersPermissionsIDs({
-            cb: function(){
-                gapi.client.load('drive', 'v2', function() {
-                    //console.log(options);
-                    var request = gapi.client.drive.permissions.list({
-                        'fileId': options.fileId
-                    });
-                    request.execute(function(resp) {
-                        //console.log(options.fileId, resp);
-                        Meteor.call('refreshPermissions', resp.items, options.fileId);
-                        Meteor.setTimeout(function(){
-                            if( _.isFunction(options.cb) )
-                                return options.cb();
-                        }, 500);
-                    });
-                });
-            }
-        });
-    },
-    refreshUsersPermissionsIDs: function(options){
-        if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
-            return false;
-
-        _.each(Meteor.users.find().fetch().concat(Emails.find().fetch()), function(user){
+        _.each(Meteor.users.find({perm_id: {$exists: false}}).fetch().concat(Emails.find({perm_id: {$exists: false}}).fetch()), function(user){
             gapi.client.load('drive', 'v2', function() {
                 var request = gapi.client.drive.permissions.getIdForEmail({
                     'email': user.profile.email
@@ -100,9 +59,91 @@ Drive = {
             });
         });
 
-        if( _.isFunction(options.cb) )
-            return options.cb();
+        gapi.client.load('drive', 'v2', function() {
+            //console.log('refresh files');
+            var request = gapi.client.drive.files.list({
+                //'pageToken': nextPageToken
+            });
+            request.execute(function(resp) {
+                    //console.log('refresh files3', resp);
+                    //console.log(resp);
+                    //Meteor.call('refreshFiles', resp.items);
 
+                    _.each(resp.items, function(item){
+                        var file = Files.findOne(item.id);
+                        if( file ){
+                            _.extend(file, item);
+                            delete file._id;
+                            delete file.mimeType;
+                            delete file.exportLinks;
+                            //console.log('update', item);
+                            Files.update(file.id, {$set: file});
+                        }else{
+                            file = item;
+                            file._id = file.id;
+                            delete file.mimeType;
+                            delete file.exportLinks;
+                            //console.log('insert', item);
+                            var file_id = Files.insert(file);
+                            file = Files.findOne(file_id);
+                        }
+                    });
+
+                    _.each(Files.find().fetch(), function(file){
+                        Drive.call('refreshPermissions', {fileId: file._id});
+                     });
+
+                    /*Meteor.setTimeout(function(){
+                        if( _.isFunction(options.cb) )
+                            return options.cb();
+                    }, 300);*/
+            });
+        });
+    },
+    refreshPermissions: function(options){
+        if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
+            return false;
+
+        //console.log('refreshPermissions');
+        gapi.client.load('drive', 'v2', function() {
+            //console.log(options);
+            var request = gapi.client.drive.permissions.list({
+                'fileId': options.fileId
+            });
+            request.execute(function(resp) {
+                //console.log(options.fileId, resp);
+                Meteor.call('refreshPermissions', resp.items, options.fileId);
+                Meteor.setTimeout(function(){
+                    if( _.isFunction(options.cb) )
+                        return options.cb();
+                }, 300);
+            });
+        });
+    },
+    refreshUsersPermissionsIDs: function(options){
+        if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
+            return false;
+
+        //console.log('refreshUsersPermissionsIDs');
+        _.each(Meteor.users.find().fetch().concat(Emails.find().fetch()), function(user){
+            gapi.client.load('drive', 'v2', function() {
+                var request = gapi.client.drive.permissions.getIdForEmail({
+                    'email': user.profile.email
+                });
+                request.execute(function(resp) {
+                    if( !resp || resp.error )
+                        return console.log('permissionId request failed', resp);
+
+                    Meteor.call('refreshUserPermID', {user_id: user._id, perm_id: resp.id});
+
+                    Meteor.setTimeout(function(){
+                        if( _.isFunction(options.cb) )
+                            return options.cb();
+                    }, 500);
+
+                });
+            });
+        });
     },
     setPermission: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )

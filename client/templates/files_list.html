@@ -41,7 +41,7 @@
     <tr>
         <td class="type-icon-column"><img class="file-row-icon" src="{{iconLink}}" /></td>
         <td><a href="{{alternateLink}}" target="_blank">{{title}}</a></td>
-        <td>{{getFormattedSize}} ({{fileSize}} bytes)</td>
+        <td>{{getFormattedSize}} ({{numeric fileSize}} bytes)</td>
         <td><time class="timeago" datetime="{{createdDate}}">{{niceTime 'createdDate'}}</time></td>
         <td class="actions-column">
             {{#if isInRole 'admin'}}
@@ -61,7 +61,7 @@
     <tr>
         <td class="type-icon-column"><img class="file-row-icon" src="{{iconLink}}" /></td>
         <td><a href="{{alternateLink}}" target="_blank">{{title}}</a></td>
-        <td>{{getFormattedSize}} ({{fileSize}} bytes)</td>
+        <td>{{getFormattedSize}} ({{numeric fileSize}} bytes)</td>
         <td><time class="timeago" datetime="{{createdDate}}">{{niceTime 'createdDate'}}</time></td>
         <td class="actions-column">
             {{#if isUserOwner _id}}

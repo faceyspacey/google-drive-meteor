@@ -23,6 +23,13 @@ FileModel = function(doc) {
         return readableFileSize(this.fileSize);
     }
 
+    this.numeric = function(data, type){
+        if( type == 'float' )
+            return data != undefined ? parseFloat(data) : 0;
+        else
+            return data != undefined ? parseInt(data) : 0;
+    }
+
     _.extend(this, Model);
     this.extend(doc);
 

@@ -49,9 +49,9 @@ Model = {
         return moment(this[field]).format("ddd, MMM Do, h:mm a");
     },
     niceTime: function(field) {
-        var time = this[field] ? this[field].replace('T', ' ').replace('Z', '') : 0,
-            d = Date.parse(time);
-        return moment(new Date(d)).format("ddd, MMM Do, h:mm a");
+        var time = this[field] != undefined ? this[field].replace('T', ' ').replace('Z', '') : 0,
+            d = strtotime(time);
+        return moment(new Date(d*1000)).format("ddd, MMM Do, h:mm a");
     },
     timeVerify: function(field) {
         return (this[field] && this[field].getTime() > 0) ? this.time(field) : 'Not yet';
