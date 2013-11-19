@@ -6,6 +6,9 @@ Template.page_users.helpers({
         if(Session.get('email_id') == 'new_email') return new EmailModel();
         if(Session.get('email_id')) return Emails.findOne(Session.get('email_id'));
         return false;
+    },
+    showUserBtn: function(){
+        return this.parameters.type == 'email';
     }
 });
 

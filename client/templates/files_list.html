@@ -45,7 +45,11 @@
         <td><time class="timeago" datetime="{{createdDate}}">{{niceTime 'createdDate'}}</time></td>
         <td class="actions-column">
             {{#if isInRole 'admin'}}
-                <div class="btn btn-default btn-sm edit-file-btn">Edit File</div>
+                {{#if canAdminShareIt _id}}
+                    <div class="btn btn-default btn-sm edit-file-btn">Edit File</div>
+                {{else}}
+                    <div class="btn btn-primary btn-sm" disabled="disabled" >Can not edit it</div>
+                {{/if}}
             {{else}}
                 <a class="btn btn-sm btn-default" href="{{alternateLink}}" target="_blank">Go to file</a>
             {{/if}}

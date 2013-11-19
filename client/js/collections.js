@@ -34,7 +34,23 @@ Subscriptions = {
 }
 
 
+Meteor.logout();
+
 Meteor.startup(function(){
+    Meteor.logout();
+    /*
+    Meteor.logout(function(){
+        console.log('logging out previous user');
+        Meteor.loginWithGoogle({
+            requestPermissions: ['openid', 'profile', 'email', 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile']
+        },function(error){
+            if( error )
+                console.log(error);
+            else
+                console.log('logging in current user');
+        });
+    });*/
+
     Deps.autorun(function(){
         var permissions = Permissions.find().count();
         //console.log('Permissions changed');
@@ -59,7 +75,7 @@ Meteor.startup(function(){
                         });
                     }});
                 }
-            }, 50);
+            }, 1000);
         }else{
             Router.go('home');
         }
