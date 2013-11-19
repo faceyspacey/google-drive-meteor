@@ -50,7 +50,7 @@ UserModel = function(doc){
     this.getPermission = function(request){
         var permission = Permissions.findOne({user_id: this._id, file_id: request.file_id});
         if( !permission ){
-            console.log('getPermission user');
+            //console.log('getPermission user');
             var permission_id = Permissions.insert({user_id: this._id, file_id: request.file_id, role: null});
             permission = Permissions.findOne(permission_id);
         }

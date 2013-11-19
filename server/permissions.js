@@ -36,13 +36,15 @@ Meteor.methods({
 
         Fiber(function(params) {
             var items = params.items,
-                fileId = params.fileId;
+                fileId = params.fileId,
+                permissions = [];
 
             //console.log(items);
             _.each(items, function(item){
                 if( item.type != 'user' )
                     return;
 
+                var permId = null;
                 var role = item.role == 'owner' ? 'owner' : (item.role == 'writer' ? 'edit' : 'view');
                 var user = Meteor.users.findOne({$or: [{"profile.email": item.emailAddress}, {perm_id: item.id}]});
                 if( user ){
@@ -50,9 +52,10 @@ Meteor.methods({
                     //console.log('user', item.role, role);
                     var perm = Permissions.findOne({file_id: fileId, user_id: user._id});
                     if( !perm )
-                        var permId = Permissions.insert({file_id: fileId, user_id: user._id, role: role, perm_id: user.perm_id});
+                        permId = Permissions.insert({file_id: fileId, user_id: user._id, role: role, perm_id: user.perm_id});
                     else
                         Permissions.update(perm._id, {$set: {role: role}});
+                    permId = perm._id;
                 }else{
                     //console.log('email', item.role, role);
                     user = Emails.findOne({email: item.emailAddress});
@@ -60,14 +63,22 @@ Meteor.methods({
                         //console.log('userEmail', user.email);
                         var perm = Permissions.findOne({file_id: fileId, $or: [{user_id: user._id}, {perm_id: item.id}]});
                         if( !perm )
-                            var permId = Permissions.insert({file_id: fileId, email: user.email, role: role, perm_id: item.id});
+                            permId = Permissions.insert({file_id: fileId, email: user.email, role: role, perm_id: item.id});
                         else
                             Permissions.update(perm._id, {$set: {role: role}});
+                        permId = perm._id;
                     }
                 }
 
+                if( permId != null )
+                    permissions.push(permId);
+
                 //console.log(Permissions.find().count());
             });
+
+            
+            Permissions.find({_id: {$nin: permissions}, file_id: fileId}).forEach(function(perm){ Permissions.remove(perm._id); });
+
         }).run({items: items, fileId: fileId});
 
         return true;

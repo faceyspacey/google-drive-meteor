@@ -40,7 +40,7 @@ EmailModel = function(doc) {
     this.getPermission = function(request){
         var permission = Permissions.findOne({email: this.email, file_id: request.file_id});
         if( !permission ){
-            console.log('getPermission email');
+            //console.log('getPermission email');
             var permission_id = Permissions.insert({email: this.email, file_id: request.file_id, role: null});
             permission = Permissions.findOne(permission_id);
         }

@@ -191,7 +191,7 @@ Drive = {
                         if( _.isFunction(options.cb) )
                             return options.cb();
                     }else{
-                        console.log('delete failed', udateResp);
+                        console.log('delete failed', deleteResp);
                         if( _.isFunction(options.cb_error) )
                             return options.cb_error();
                     }
