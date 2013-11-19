@@ -6,7 +6,8 @@ Template.users_list.helpers({
         return {file_id: this.file_id, type: this.type};
     },
     usersCount: function(params){
-        var data = [];
+        var data = [],
+            permissions = Permissions.find();
         switch(params.type){
             case 'user':    data = Meteor.users.find().fetch(); break;
             case 'email':   data = Emails.find().fetch(); break;
@@ -17,7 +18,8 @@ Template.users_list.helpers({
     users: function(params) {
         var sortBy = Session.get('home_user_sort_by'),
             sortDir = Session.get('home_user_sort_dir'),
-            data = [];
+            data = [],
+            permissions = Permissions.find();
 
         if( sortBy == undefined ){
             Session.set('home_user_sort_dir', 1);
@@ -68,7 +70,7 @@ Template.users_list.events({
         Session.set('home_user_sort_by', sortBy);
     },
     "click .edit-user-btn": function(e){
-        Router.go("editUser", {user_id: this._id, type: this.model_type});
+        Router.go("editUser", {user_id: this._id, model_type: this.model_type});
     },
     "click .can-view-btn": function(e){
         var file_id = Router.current().params['file_id'],

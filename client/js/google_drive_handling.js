@@ -73,6 +73,10 @@ Drive = {
                     request.execute(function(resp) {
                         //console.log(options.fileId, resp);
                         Meteor.call('refreshPermissions', resp.items, options.fileId);
+                        Meteor.setTimeout(function(){
+                            if( _.isFunction(options.cb) )
+                                return options.cb();
+                        }, 500);
                     });
                 });
             }
@@ -108,8 +112,12 @@ Drive = {
                 'email': options.value
             });
             request.execute(function(resp) {
-                if( !resp || resp.error )
-                    return console.log('permissionId request failed', resp);
+                if( !resp || resp.error ){
+                    console.log('permissionId request failed', resp);
+                    if( _.isFunction(options.cb_error) )
+                        return options.cb_error();
+                    return;
+                }
 
                 //console.log('getId', resp);
                 var request = gapi.client.drive.permissions.get({
@@ -129,9 +137,13 @@ Drive = {
                         updateRequest.execute(function(udateResp) {
                             if( udateResp && !udateResp.error ){
                                 if( _.isFunction(options.cb) )
-                                    options.cb();
-                            }else
-                                console.log('insert failed', udateResp);
+                                    return options.cb();
+                            }else{
+                                console.log('update failed', udateResp);
+                                if( _.isFunction(options.cb_error) )
+                                    return options.cb_error();
+                            }
+                            return;
                         });
                     }else{
                         // Insert new permission
@@ -149,9 +161,13 @@ Drive = {
                         request.execute(function(insertResp) {
                             if( insertResp && !insertResp.error ){
                                 if( _.isFunction(options.cb) )
-                                    options.cb();
-                            }else
+                                    return options.cb();
+                            }else{
                                 console.log('insert failed', insertResp);
+                                if( _.isFunction(options.cb_error) )
+                                    return options.cb_error();
+                            }
+                            return;
                         });
                     }
                 });
@@ -173,9 +189,13 @@ Drive = {
                 request.execute(function(deleteResp) {
                     if( deleteResp && !deleteResp.error ){
                         if( _.isFunction(options.cb) )
-                            options.cb();
-                    }else
-                        console.log('delete failed', deleteResp);
+                            return options.cb();
+                    }else{
+                        console.log('delete failed', udateResp);
+                        if( _.isFunction(options.cb_error) )
+                            return options.cb_error();
+                    }
+                    return;
                 });
             });
         });

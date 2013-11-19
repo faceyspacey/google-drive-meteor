@@ -79,26 +79,32 @@ UserModel = function(doc){
         var perm = this.getPermission({file_id: fileId});
 
         if(!perm) return;
+        var oldPermRole = perm.role;
 
         if(role == 'view' && perm && perm.role == 'edit'){
-            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'reader', cb: function(){
-                return perm.save({role: role});
+            perm.save({role: role});
+            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'reader', cb_error: function(){
+                return perm.save({role: oldPermRole});
             }});
         }else if(role == 'view' && perm){
-            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'reader', cb: function(){
-                return perm.save({role: perm.role == 'view' ? null : 'view'});
+            perm.save({role: perm.role == 'view' ? null : 'view'});
+            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'reader', cb_error: function(){
+                return perm.save({role: oldPermRole});
             }});
         }else if( role == 'edit' && perm && perm.role == 'edit'){
-            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'writer', cb: function(){
-                return perm.save({role: 'view'});
+            perm.save({role: 'view'});
+            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'writer', cb_error: function(){
+                return perm.save({role: oldPermRole});
             }});
         }else if(role == 'edit' && perm){
-            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'writer', cb: function(){
-                return perm.save({role: 'edit'});
+            perm.save({role: 'edit'});
+            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'writer', cb_error: function(){
+                return perm.save({role: oldPermRole});
             }});
         }else if( role == 'nothing' && perm ){
-            Drive.call('deletePermission', {fileId: fileId, value: this.profile.email, cb: function(){
-                return perm.save({role: null});
+            perm.save({role: null});
+            Drive.call('deletePermission', {fileId: fileId, value: this.profile.email, cb_error: function(){
+                return perm.save({role: oldPermRole});
             }});
         }
 

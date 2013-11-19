@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/home.js" afterPath="$PROJECT_DIR$/client/template_js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/layout.html" afterPath="$PROJECT_DIR$/client/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/layout.js" afterPath="$PROJECT_DIR$/client/template_js/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/main.css" afterPath="$PROJECT_DIR$/client/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/EmailModel.js" afterPath="$PROJECT_DIR$/client/js/models/EmailModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/UserModel.js" afterPath="$PROJECT_DIR$/client/js/models/UserModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/collections.js" afterPath="$PROJECT_DIR$/client/js/collections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/files_list.js" afterPath="$PROJECT_DIR$/client/template_js/files_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/google_drive_handling.js" afterPath="$PROJECT_DIR$/client/js/google_drive_handling.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/router.js" afterPath="$PROJECT_DIR$/client/js/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/users_list.js" afterPath="$PROJECT_DIR$/client/template_js/users_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384693508466" ignored="false" />
+    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384853534801" ignored="false" />
     <file path="/user_info.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609854002" ignored="false" />
     <file path="/user_info.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609915012" ignored="false" />
     <file path="/a.dummy" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384705429861" ignored="false" />
-    <file path="/google_drive_handling.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384716437041" ignored="false" />
+    <file path="/google_drive_handling.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384858441445" ignored="false" />
     <file path="/emails.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384713477765" ignored="false" />
     <file path="/files.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384709110689" ignored="false" />
     <file path="/permissions.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384707166757" ignored="false" />
@@ -25,9 +29,9 @@
     <file path="/main.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384696875844" ignored="false" />
     <file path="/layout.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384725811511" ignored="false" />
     <file path="/layout.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384725883613" ignored="false" />
-    <file path="/files_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384716102017" ignored="false" />
-    <file path="/UserModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384701592926" ignored="false" />
-    <file path="/EmailModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384716338722" ignored="false" />
+    <file path="/files_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384859624876" ignored="false" />
+    <file path="/UserModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384855409789" ignored="false" />
+    <file path="/EmailModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384855469089" ignored="false" />
     <file path="/_Model.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384702187336" ignored="false" />
     <file path="/server.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384703945292" ignored="false" />
     <file path="/client.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384720662065" ignored="false" />
@@ -37,6 +41,9 @@
     <file path="/users_list.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384718797868" ignored="false" />
     <file path="/edit_user.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384719999160" ignored="false" />
     <file path="/main.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384723012269" ignored="false" />
+    <file path="/router.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384855049811" ignored="false" />
+    <file path="/users_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384855071397" ignored="false" />
+    <file path="/collections.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384861957367" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,37 +63,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="layout.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="-4.2">
+            <state line="60" column="25" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/home.js">
+      <file leaf-file-name="google_drive_handling.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="187" column="19" selection-start="7680" selection-end="7680" vertical-scroll-proportion="-21.588236">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="55" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.3970588">
+            <state line="55" column="11" selection-start="2075" selection-end="2075" vertical-scroll-proportion="-6.25">
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
@@ -96,37 +94,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/router.js">
+      <file leaf-file-name="users_list.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/template_js/users_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+            <state line="60" column="15" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_info.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/user_info.js">
+      <file leaf-file-name="collections.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/js/collections.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="5" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+            <state line="37" column="28" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.30172414">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/css/main.css">
+      <file leaf-file-name="files_list.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/template_js/files_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="406" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-5.2">
+            <state line="8" column="21" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_user.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/css/edit_user.css">
+      <file leaf-file-name="users_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="1" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+            <state line="48" column="35" selection-start="1901" selection-end="1901" vertical-scroll-proportion="-8.541667">
               <folding />
             </state>
           </provider>
@@ -135,16 +133,25 @@
       <file leaf-file-name="files_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/files_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="24" selection-start="929" selection-end="929" vertical-scroll-proportion="-0.625">
+            <state line="7" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="16.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_info.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/user_info.html">
+      <file leaf-file-name="files.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/files.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="443" selection-end="443" vertical-scroll-proportion="-5.625">
+            <state line="12" column="32" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permissions.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/permissions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="15" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,14 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/template_js/users_list.js" />
-        <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
-        <option value="$PROJECT_DIR$/client/js/models/FileModel.js" />
-        <option value="$PROJECT_DIR$/client/js/models/PermissionModel.js" />
-        <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
-        <option value="$PROJECT_DIR$/client/js/google_drive_handling.js" />
-        <option value="$PROJECT_DIR$/client/templates/users_list.html" />
-        <option value="$PROJECT_DIR$/client/templates/edit_user.html" />
         <option value="$PROJECT_DIR$/client/css/lib/responsive.css" />
         <option value="$PROJECT_DIR$/client/css/edit_user.css" />
         <option value="$PROJECT_DIR$/client/templates/files_list.html" />
@@ -184,14 +183,23 @@
         <option value="$PROJECT_DIR$/client/template_js/layout.js" />
         <option value="$PROJECT_DIR$/client/css/main.css" />
         <option value="$PROJECT_DIR$/client/templates/layout.html" />
+        <option value="$PROJECT_DIR$/client/js/router.js" />
+        <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
+        <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
+        <option value="$PROJECT_DIR$/client/js/google_drive_handling.js" />
+        <option value="$PROJECT_DIR$/client/template_js/files_list.js" />
+        <option value="$PROJECT_DIR$/client/template_js/users_list.js" />
+        <option value="$PROJECT_DIR$/server/files.js" />
+        <option value="$PROJECT_DIR$/client/js/collections.js" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1317" />
-    <option name="y" value="24" />
-    <option name="width" value="1317" />
-    <option name="height" value="744" />
+    <option name="x" value="-1318" />
+    <option name="y" value="-4" />
+    <option name="width" value="1319" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -219,6 +227,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,7 +400,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,15 +428,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1317" y="24" width="1317" height="744" extended-state="6" />
+    <frame x="-1318" y="-4" width="1319" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24242425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24862313" sideWeight="0.75757575" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25255704" sideWeight="0.74539363" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -437,6 +444,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25460637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -503,119 +511,119 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/js/models/PermissionModel.js">
+    <entry file="file://$PROJECT_DIR$/client/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="303" vertical-scroll-proportion="0.0">
+        <state line="18" column="406" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
+    <entry file="file://$PROJECT_DIR$/client/template_js/edit_user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="5" selection-start="7278" selection-end="7278" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="2050" selection-end="2050" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/edit_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="414" selection-end="414" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/lib/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1196" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/edit_user.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/files_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="929" selection-end="929" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/user_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="443" selection-end="443" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/user_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+        <state line="14" column="5" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
+        <state line="26" column="0" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="36" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="95" selection-start="4063" selection-end="4071" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="37" column="35" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="-4.2">
+        <state line="60" column="25" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/main.css">
+    <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="406" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-5.2">
+        <state line="187" column="19" selection-start="7680" selection-end="7680" vertical-scroll-proportion="-21.588236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/template_js/files_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="35" selection-start="1901" selection-end="1901" vertical-scroll-proportion="-8.541667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/template_js/users_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="15" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/files.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/permissions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="15" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/files_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="16.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.3970588">
+        <state line="55" column="11" selection-start="2075" selection-end="2075" vertical-scroll-proportion="-6.25">
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#header#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/collections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="28" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.30172414">
+          <folding />
         </state>
       </provider>
     </entry>

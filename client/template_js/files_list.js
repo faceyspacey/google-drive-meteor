@@ -3,7 +3,8 @@
 
 Template.files_list.helpers({
     filesCount: function(userId){
-        var data = [];
+        var data = [],
+            permissions = Permissions.find();
 
         if( !userId )
             data = Files.find().fetch();
@@ -17,7 +18,8 @@ Template.files_list.helpers({
     files: function(userId) {
         var sortBy = Session.get('home_file_sort_by'),
             sortDir = Session.get('home_file_sort_dir'),
-            data = [];
+            data = [],
+            permissions = Permissions.find();
 
 
         if( sortBy == undefined ){

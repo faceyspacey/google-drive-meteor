@@ -27,12 +27,12 @@ Router.map(function () {
         data: {}
     });
     this.route('editUser', {
-        path: '/editUser/:user_id/:type',
+        path: '/editUser/:user_id/:model_type',
         template: 'page_edit_user',
         waitOn: function(){
             return Session.set('page_title', 'Edit user permissions');
         },
-        data: function(){ return {user_id: this.params.user_id, model_type: this.params.type}; }
+        data: function(){ return {user_id: this.params.user_id, model_type: this.params.model_type}; }
     });
     this.route('editFile', {
         path: '/editFile/:file_id',
