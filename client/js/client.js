@@ -69,8 +69,7 @@ Handlebars.registerHelper('canAdminShareIt', function(fileId){
 
 initializeSidebar = function(){
     $(function() {
-        console.log();
-        console.log('activating accordion');
+        //console.log('activating accordion');
         $("ul#nav").accordion({
             heightStyle: 'content',
             active: getNumOfActiveMenuItem(),

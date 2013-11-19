@@ -37,12 +37,12 @@ Subscriptions = {
 Meteor.startup(function(){
     Deps.autorun(function(){
         var permissions = Permissions.find().count();
-        console.log('Permissions changed');
+        //console.log('Permissions changed');
         if( Subscriptions.files ){
             Subscriptions.files.stop();
             Meteor.setTimeout(function(){
                 Subscriptions.files = Meteor.subscribe('files');
-                console.log('Files refreshed');
+               // console.log('Files refreshed');
             }, 50);
         }
     });

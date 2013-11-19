@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/EmailModel.js" afterPath="$PROJECT_DIR$/client/js/models/EmailModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/UserModel.js" afterPath="$PROJECT_DIR$/client/js/models/UserModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/client.js" afterPath="$PROJECT_DIR$/client/js/client.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/collections.js" afterPath="$PROJECT_DIR$/client/js/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/files_list.js" afterPath="$PROJECT_DIR$/client/template_js/files_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/google_drive_handling.js" afterPath="$PROJECT_DIR$/client/js/google_drive_handling.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/router.js" afterPath="$PROJECT_DIR$/client/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/users_list.js" afterPath="$PROJECT_DIR$/client/template_js/users_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,19 +57,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
+      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="25" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
+            <state line="79" column="1" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_drive_handling.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="google_drive_handling.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="19" selection-start="7680" selection-end="7680" vertical-scroll-proportion="-21.588236">
+            <state line="30" column="40" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.6104651">
               <folding />
             </state>
           </provider>
@@ -103,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collections.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="collections.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/collections.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="28" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.30172414">
+            <state line="47" column="7" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,7 +172,6 @@
         <option value="$PROJECT_DIR$/client/css/lib/responsive.css" />
         <option value="$PROJECT_DIR$/client/css/edit_user.css" />
         <option value="$PROJECT_DIR$/client/templates/files_list.html" />
-        <option value="$PROJECT_DIR$/client/js/client.js" />
         <option value="$PROJECT_DIR$/client/template_js/home.js" />
         <option value="$PROJECT_DIR$/client/template_js/layout.js" />
         <option value="$PROJECT_DIR$/client/css/main.css" />
@@ -186,11 +179,12 @@
         <option value="$PROJECT_DIR$/client/js/router.js" />
         <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
         <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
-        <option value="$PROJECT_DIR$/client/js/google_drive_handling.js" />
         <option value="$PROJECT_DIR$/client/template_js/files_list.js" />
         <option value="$PROJECT_DIR$/client/template_js/users_list.js" />
         <option value="$PROJECT_DIR$/server/files.js" />
         <option value="$PROJECT_DIR$/client/js/collections.js" />
+        <option value="$PROJECT_DIR$/client/js/client.js" />
+        <option value="$PROJECT_DIR$/client/js/google_drive_handling.js" />
       </list>
     </option>
   </component>
@@ -525,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="36" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
@@ -556,13 +543,6 @@
     <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="25" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="19" selection-start="7680" selection-end="7680" vertical-scroll-proportion="-21.588236">
           <folding />
         </state>
       </provider>
@@ -622,7 +602,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/collections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="28" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.30172414">
+        <state line="47" column="7" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="1" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="40" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.6104651">
           <folding />
         </state>
       </provider>
