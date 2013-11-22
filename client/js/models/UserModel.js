@@ -23,6 +23,7 @@ UserModel = function(doc){
     this.defaultValues = {
         model_type: 'user'
     };
+    this.is_active = true;
 
     this.getEmail = function(){
         return this.profile && this.profile.email ? this.profile.email : 'no email address';

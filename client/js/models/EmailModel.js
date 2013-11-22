@@ -13,6 +13,7 @@ EmailModel = function(doc) {
     this.defaultValues = {
         model_type: 'email'
     };
+    this.is_active = false;
 
     this.getAttr = function(attr){
         return this.profile && this.profile[attr] ? this.profile[attr] : ' - ';

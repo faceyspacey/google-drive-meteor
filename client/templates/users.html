@@ -1,14 +1,13 @@
 <template name="page_users">
-    {{#if showUserBtn}}
-        <div id="add-user-form-btn" class="btn btn-default" style="margin-bottom: 25px;">
-            Add User
-        </div>
 
-        {{#if model}}
-            {{#with model}}
-                {{>user_add_form}}
-            {{/with}}
-        {{/if}}
+    <div id="add-user-form-btn" class="btn btn-default" style="margin-bottom: 25px;">
+        Add User
+    </div>
+
+    {{#if model}}
+        {{#with model}}
+            {{>user_add_form}}
+        {{/with}}
     {{/if}}
 
     {{>users_list parameters}}

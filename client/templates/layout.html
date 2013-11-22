@@ -61,13 +61,13 @@
                 <li class="{{isCurrent 'files'}}"> <a href="javascript: Router.go('files');"> <i class="fa fa-file-text"></i> Files <span class="label label-info pull-right">{{filesCount}}</span> </a> </li>
                 {{/if}}
                 {{#if isInRole 'admin'}}
-                <li class="{{isCurrent 'users'}} {{isCurrent 'onlyUsers'}} {{isCurrent 'onlyEmails'}}">
-                    <a class="acc-opener" href="javascript: void(0);"> <i class="fa fa-users"></i> Users <span class="label label-info pull-right">{{allUsersCount}}</span> <i class="fa arrow fa-angle-left"></i> </a>
-                    <ul class="sub-menu">
+                <li class="{{isCurrent 'users'}}">
+                    <a href="javascript: Router.go('users');"> <i class="fa fa-users"></i> Users <span class="label label-info pull-right">{{allUsersCount}}</span> </a>
+                    <!--<ul class="sub-menu">
                         <li class="{{isCurrent 'users'}}"><a href="javascript: Router.go('users');"> <i class="fa fa-angle-right"></i> All Users </a> </li>
                         <li class="{{isCurrent 'onlyUsers'}}"><a href="javascript: Router.go('onlyUsers');"> <i class="fa fa-angle-right"></i> Registered <span class="label label-info pull-right">{{usersCount}}</span> </a> </li>
                         <li class="{{isCurrent 'onlyEmails'}}"><a href="javascript: Router.go('onlyEmails');"> <i class="fa fa-angle-right"></i> Pre-registered <span class="label label-info pull-right">{{emailsCount}}</span> </a> </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 {{/if}}
 

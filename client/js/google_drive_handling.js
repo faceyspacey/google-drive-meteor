@@ -28,7 +28,7 @@ Drive = {
         gapi.auth.authorize(
             {'client_id': Drive.client_id, 'scope': SCOPES.join(' '), 'immediate': false, login_hint: 'sequenciadocuments@gmail.com'},
             function(authResult){
-                console.log(authResult);
+                //console.log(authResult);
                 if (authResult && !authResult.error) {
                     if( _.isFunction(Drive[cb]) )
                         return Drive[cb](options);
@@ -68,14 +68,17 @@ Drive = {
                     //console.log('refresh files3', resp);
                     //console.log(resp);
                     //Meteor.call('refreshFiles', resp.items);
+                    var files = [];
 
                     _.each(resp.items, function(item){
+                        var file_id = null;
                         var file = Files.findOne(item.id);
                         if( file ){
                             _.extend(file, item);
                             delete file._id;
                             delete file.mimeType;
                             delete file.exportLinks;
+                            file_id = file.id;
                             //console.log('update', item);
                             Files.update(file.id, {$set: file});
                         }else{
@@ -84,19 +87,49 @@ Drive = {
                             delete file.mimeType;
                             delete file.exportLinks;
                             //console.log('insert', item);
-                            var file_id = Files.insert(file);
+                            file_id = Files.insert(file);
                             file = Files.findOne(file_id);
                         }
+
+                        if( file_id != null && file_id != undefined)
+                            files.push(file_id);
+                    });
+
+                    console.log(files);
+
+                    _.each(Files.find({_id: {$nin: files}}).fetch(), function(file){
+                        Files.remove(file._id);
+                    });
+
+                    _.each(Permissions.find({file_id: {$nin: files}}).fetch(), function(perm){
+                        Permissions.remove(perm._id);
                     });
 
                     _.each(Files.find().fetch(), function(file){
                         Drive.call('refreshPermissions', {fileId: file._id});
-                     });
+                    });
+            });
+        });
+    },
+    deleteFile: function(options){
+        if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
+            return false;
 
-                    /*Meteor.setTimeout(function(){
-                        if( _.isFunction(options.cb) )
-                            return options.cb();
-                    }, 300);*/
+        //console.log('refreshPermissions');
+        gapi.client.load('drive', 'v2', function() {
+            var request = gapi.client.drive.files.delete({
+                'fileId': options.fileId
+            });
+            request.execute(function(resp) {
+                if(resp && !resp.error) {
+                    Files.remove(options.fileId);
+                    _.each(Permissions.find({file_id: {$nin: options.fileId}}).fetch(), function(perm){
+                        Permissions.remove(perm._id);
+                    });
+                }else{
+                    alert('Failed to delete file. For more info, read console logs.');
+                    return console.log('Failed to delete file', resp);
+                }
             });
         });
     },

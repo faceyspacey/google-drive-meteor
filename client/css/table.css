@@ -37,7 +37,11 @@ td.type-icon-column {
 }
 
 .actions-column{
-    width: 150px !important;
+    width: 170px !important;
+    text-align: center;
+}
+.status-column {
+    width: 80px !important;
     text-align: center;
 }
 

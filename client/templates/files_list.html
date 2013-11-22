@@ -47,6 +47,7 @@
             {{#if isInRole 'admin'}}
                 {{#if canAdminShareIt _id}}
                     <div class="btn btn-default btn-sm edit-file-btn">Edit File</div>
+                    <div class="btn btn-danger btn-sm delete-file-btn">Delete File</div>
                 {{else}}
                     <div class="btn btn-primary btn-sm" disabled="disabled" >Can not edit it</div>
                 {{/if}}

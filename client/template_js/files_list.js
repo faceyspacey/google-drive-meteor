@@ -74,6 +74,10 @@ Template.files_list.events({
     "click .edit-file-btn": function(e){
         Router.go("editFile", {file_id: this._id});
     },
+    "click .delete-file-btn": function(e){
+        if( confirm('Do you want to remove this file? (It will be also removed from admin google drive)') )
+            Drive.call('deleteFile', {fileId: this._id});
+    },
     "click .files-refresh-btn": function(e){
         Drive.call('refreshFiles', {});
     },

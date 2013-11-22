@@ -9,6 +9,7 @@
                     <th class="sortable {{sorted 'getFirstName'}}" data-field="getFirstName">First Name</th>
                     <th class="sortable {{sorted 'getLastName'}}" data-field="getLastName">Last Name</th>
                     <th class="sortable {{sorted 'getEmail'}}" data-field="getEmail">Email</th>
+                    <th class="status-column">Status</th>
                     <th class="actions-column">Actions</th>
                 </thead>
                 <tbody>
@@ -35,6 +36,13 @@
         <td>{{getFirstName}}</td>
         <td>{{getLastName}}</td>
         <td>{{getEmail}}</td>
+        <td class="status-column">
+            {{#if is_active}}
+            <div class="btn btn-success btn-sm" disabled="disabled">Active</div>
+            {{else}}
+            <div class="btn btn-default btn-sm" disabled="disabled">Inactive</div>
+            {{/if}}
+        </td>
         <td class="actions-column"><div class="btn btn-default btn-sm edit-user-btn">Edit User</div></td>
     </tr>
 </template>
@@ -45,6 +53,13 @@
         <td>{{getFirstName}}</td>
         <td>{{getLastName}}</td>
         <td>{{getEmail}}</td>
+        <td class="status-column">
+            {{#if is_active}}
+                <div class="btn btn-success btn-sm" disabled="disabled">Active</div>
+            {{else}}
+                <div class="btn btn-default btn-sm" disabled="disabled">Inactive</div>
+            {{/if}}
+        </td>
         <td class="actions-column">
             {{#if isFileOwned _id}}
                 <div class="btn btn-primary btn-sm" disabled="disabled" >Owner</div>
