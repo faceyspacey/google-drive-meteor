@@ -6,7 +6,12 @@
       "roles": {},
       "moment": {},
       "datatables": {},
-      "jquery-ui": {}
+      "jquery-ui": {},
+      "node-modules": {},
+      "console-me": {
+        "git": "https://github.com/aldeed/meteor-console-me.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "iron-router": {
@@ -33,6 +38,16 @@
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
         "tag": "v1.9.2",
         "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
+      },
+      "node-modules": {
+        "git": "https://github.com/possibilities/meteor-node-modules.git",
+        "tag": "v0.0.5",
+        "commit": "d502e5091759073a6baed856fadd93012749842d"
+      },
+      "console-me": {
+        "git": "https://github.com/aldeed/meteor-console-me.git",
+        "branch": "master",
+        "commit": "257b6560ff7cb052ff56fd70b96f523ca55120e8"
       }
     }
   }

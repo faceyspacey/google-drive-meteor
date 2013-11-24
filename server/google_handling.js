@@ -1,5 +1,56 @@
-/*
-var key = "-----BEGIN PRIVATE KEY-----\n\
+
+ConsoleMe.enabled = true;
+
+//console.log(NodeModules);
+
+//NodeModules.setPath('/public/node_modules');
+//var GAPI = Npm.require('gapitoken');
+console.log('GAPI: ', GAPI);
+const calRoot = "https://www.googleapis.com/drive/v2";
+const request = Npm.require('request');
+
+Fiber = Npm.require("fibers");
+
+Meteor.methods({
+    refreshFiles: function(options){
+        Fiber(function() {
+            Drive.call('refreshFiles', options);
+        }).run();
+        return true;
+    },
+    deleteFile: function(options){
+        Fiber(function() {
+            Drive.call('deleteFile', options);
+        }).run();
+        return true;
+    },
+    setPermission: function(options){
+        Fiber(function() {
+            console.log('setPermission call');
+            Drive.call('setPermission', options);
+        }).run();
+        return true;
+    },
+    deletePermission: function(options){
+        Fiber(function() {
+            Drive.call('deletePermission', options);
+        }).run();
+        return true;
+    },
+    gAuth: function(params){
+        Fiber(function() {
+            Drive.listFiles2();
+        }).run();
+    }
+});
+
+
+Drive = {
+    creds: {
+        //iss: 'sequenciadocuments@gmail.com',
+        iss: '709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com',
+        scope: 'https://www.googleapis.com/auth/drive',
+        key: "-----BEGIN RSA PRIVATE KEY-----\n\
 MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBALnKF0sk/YB34fMq\n\
 BYqo+/pZvGL+PgZoa6n4SLZmJPri1GqwtrgBn1UWbXxynXqyIly0/scKCL/lXpCr\n\
 wCRdABBb89TUTfuXnrsZXxW4/t6IhrXMH4JY2nRVxFHocw+b+B4KNU9hz1MLLRxd\n\
@@ -14,76 +65,283 @@ QPbJAkEAtyPO9+BN52GKGV5EZPTiAMn9rd+ROXgUEaGMIFYUTF7Y9P8Xl0/BLKQO\n\
 RdGkOr/GZ9QKu+YUlmsBp4tr/NHz5uXMswUHmOfcxJHi9IIcZ6XWgQJAUQfz+vq0\n\
 KU6HP20FjC/zdbane4OdG0MEHU9ZpOSMrEg2MUhRataZQsfS8uriVGB9A3vmZs7R\n\
 CGEPQPbVcfqz+g==\n\
------END PRIVATE KEY-----";
-
-
-var GAPI = Npm.require('gapitoken');
-Fiber = Npm.require("fibers");
-
-Meteor.methods({
-    googleAuth: function(params){
-        Fiber(function() {
-            Drive.callAuth('', {});
-        }).run();
-        return true;
-    }
-});
-
-
-Drive = {
-    creds: {
-        iss: '709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com',
-        scope: 'https://www.googleapis.com/auth/drive',
-        key: key
+-----END RSA PRIVATE KEY-----"
     },
-    gapi: {},
+    gapi: null,
     call: function(cb, options){
         Drive.checkAuth(cb, options);
     },
     checkAuth: function(cb, options){
-        console.log('checkAuth', Drive.gapi);
-        if( !(Drive.gapi instanceof GAPI) )
+        //console.log('checkAuth', Drive.gapi);
+        if( Drive.gapi == null )
             return Drive.callAuth(cb, options);
 
-
-        console.log('callAuth gapi exists', Drive.gapi);
-
         Drive.gapi.getToken(function(token) {
-            if( !token.error && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
-                console.log(Drive.gapi);
+            //console.log('token:', token);
+            if( token == null && Drive.gapi && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
+                //console.log(Drive.gapi);
                 if( _.isFunction(Drive[cb]) )
                     Drive[cb](options);
                 return true;
-            }else
-                console.log(Drive.gapi);
+            }
         });
 
         return Drive.callAuth(cb, options);
     },
     callAuth: function(cb, options){
-        console.log('callAuth', Drive.gapi);
-        Fiber(function() {
-            Drive.gapi = new GAPI({
-                iss: Drive.creds.iss,
-                scope: Drive.creds.scope,
-                key: Drive.creds.key
-            }, function(err) {
-                if (err) { return console.log(err); }
-                console.log('callAuth no error', Drive.gapi);
+        //console.log('callAuth', Drive.gapi);
+            //console.log(Drive.creds);
+        Drive.gapi = new GAPI({
+            iss: Drive.creds.iss,
+            scope: Drive.creds.scope,
+            key: Drive.creds.key
+        }, function(err) {
+            if (err) { return console.log(err); }
+            //console.log('callAuth no error', Drive.gapi);
 
-                Drive.gapi.getToken(function(token) {
-                    if( token && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
-                        if( _.isFunction(Drive[cb]) )
-                            Drive[cb](options);
+            Drive.gapi.getToken(function(token) {
+                //console.log(Drive.gapi);
+                if( token == null && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
+                    if( _.isFunction(Drive[cb]) )
+                        Drive[cb](options);
+                    else
+                        return console.log('No callback');
+                }else
+                    return console.log('Have no GAPI token.');
+            });
+        });
+    },
+    refreshFiles: function(options){
+        var token = "?access_token="+Drive.gapi.token;
+
+        Fiber(function() {
+            _.each(Meteor.users.find().fetch().concat(Emails.find().fetch()), function(user){
+                request.get({
+                    url: calRoot+"/permissionIds/"+user.profile.email+""+token,
+                    json:true,
+                }, function(err, res, body){
+                    if( body.error ) return console.log(body);
+
+                    Fiber(function() {
+                        console.log(user._id, body.id);
+                        if( user.model_type == 'user' )
+                            Meteor.users.update(user._id, {$set: {perm_id: body.id}});
                         else
-                            return console.log('Google authentication failed.');
-                    }else
-                        return console.log('Have no GAPI token.');
+                            Emails.update(user._id, {$set: {perm_id: body.id}});
+                    }).run();
                 });
             });
-
         }).run();
+
+
+        request.get({
+            url: calRoot+"/files"+token,
+            json:true,
+        }, function(err, res, body){
+            if( body.error ) return console.log(body);
+
+            Fiber(function() {
+                var files = [];
+                _.each(body.items, function(item){
+                    var file_id = null;
+                    var file = Files.findOne(item.id);
+                    if( file ){
+                        _.extend(file, item);
+                        delete file._id;
+                        delete file.mimeType;
+                        delete file.exportLinks;
+                        file_id = file.id;
+                        //console.log('update', item);
+                        Files.update(file.id, {$set: file});
+                    }else{
+                        file = item;
+                        file._id = file.id;
+                        delete file.mimeType;
+                        delete file.exportLinks;
+                        //console.log('insert', item);
+                        file_id = Files.insert(file);
+                        file = Files.findOne(file_id);
+                    }
+
+                    if( file_id != null && file_id != undefined)
+                        files.push(file_id);
+                });
+
+                //console.log(files);
+
+                _.each(Files.find({_id: {$nin: files}}).fetch(), function(file){
+                    Files.remove(file._id);
+                });
+
+                _.each(Permissions.find({file_id: {$nin: files}}).fetch(), function(perm){
+                    Permissions.remove(perm._id);
+                });
+
+                _.each(Files.find().fetch(), function(file){
+                    Drive.call('refreshPermissions', {fileId: file._id});
+                });
+            }).run();
+        });
+    },
+    refreshPermissions: function(options){
+        //console.log('refresh permissions for:', options.fileId);
+        var token = "?access_token="+Drive.gapi.token;
+
+        request.get({
+            url: calRoot+"/files/"+options.fileId+"/permissions"+token,
+            json:true,
+        }, function(err, res, body){
+            if( body.error ) return console.log(body);
+
+            Fiber(function() {
+                Meteor.call('refreshPermissions', body.items, options.fileId);
+            }).run();
+        });
+
+        return true;
+    },
+    deleteFile: function(options){
+        //console.log('refresh permissions for:', options.fileId);
+        var token = "?access_token="+Drive.gapi.token;
+
+        request.del({
+            url: calRoot+"/files/"+options.fileId+""+token,
+            json:true,
+        }, function(err, res, body){
+            if( body.error ) return console.log(body);
+
+            Fiber(function() {
+                Files.remove(options.fileId);
+                _.each(Permissions.find({file_id: options.fileId}).fetch(), function(perm){
+                    Permissions.remove(perm._id);
+                });
+            }).run();
+        });
+
+        return true;
+    },
+    setPermission: function(options){
+        var token = "?access_token="+Drive.gapi.token;
+
+        Fiber(function() {
+            request.get({
+                url: calRoot+"/permissionIds/"+options.value+""+token,
+                json:true,
+            }, function(err, res, body){
+                console.log(body);
+                if( body.error ) return console.log(body);
+
+                request.get({
+                    url: calRoot+"/files/"+options.fileId+"/permissions/"+body.id+""+token,
+                    json:true,
+                }, function(err, res, body){
+                    if( body.error && body.error.code != 404 ) return console.log(body);
+
+                    //var data = jwt.encode({role: options.role}, "xxx");
+                    if( body.error && body.error.code == 404  ){
+                        request.post({
+                            url: calRoot+"/files/"+options.fileId+"/permissions"+token,
+                            json:true,
+                            body: {
+                                value: options.value,
+                                type: options.type,
+                                role: options.role
+                            }
+                        }, function(err, res, body){
+                            if( body.error ) return console.log(body);
+
+                            setPermission(options, body);
+                        });
+                    }else{
+                        request.put({
+                            url: calRoot+"/files/"+options.fileId+"/permissions/"+body.id+""+token,
+                            json:true,
+                            body: {
+                                role: options.role
+                            }
+                        }, function(err, res, body){
+                            if( body.error ) return console.log(body);
+
+                            setPermission(options, body);
+                        });
+                    }
+
+                    //Meteor.call('refreshPermissions', resp.items, options.fileId);
+                });
+            });
+        }).run();
+
+        return true;
+    },
+    deletePermission: function(options){
+        //console.log('refresh permissions for:', options.fileId);
+        var token = "?access_token="+Drive.gapi.token;
+
+        request.get({
+            url: calRoot+"/permissionIds/"+options.value+""+token,
+            json:true,
+        }, function(err, res, body){
+            console.log(err, body);
+            if( !body.id || body.error ) return console.log(body);
+
+            request.del({
+                url: calRoot+"/files/"+options.fileId+"/permissions/"+body.id+""+token,
+                json:true,
+            }, function(err, res, body){
+                console.log(body);
+                if( !body.id || body.error ) return console.log(body);
+
+                if( options.userType == 'user'){
+                    var user = Meteor.users.findOne({"profile.email": options.value});
+                    var perm = Permissions.findOne({$or: [
+                        {user_id: user._id, file_id: options.fileId},
+                        {perm_id: body.id, file_id: options.fileId}
+                    ]});
+                }else{
+                    var perm = Permissions.findOne({$or: [
+                        {email: options.value, file_id: options.fileId},
+                        {perm_id: body.id, file_id: options.fileId}
+                    ]});
+                }
+                console.log(perm);
+
+                Fiber(function() {
+                    if( perm )
+                        Permissions.remove(perm._id);
+                }).run();
+            });
+        });
+
+        return true;
     }
 };
 
-*/
+function setPermission(options, body){
+    var role = body.role == 'owner' ? 'owner' : (body.role == 'writer' ? 'edit' : 'view');
+
+    Fiber(function() {
+        if( options.userType == 'user'){
+            var user = Meteor.users.findOne({"profile.email": options.value});
+            var perm = Permissions.findOne({$or: [
+                {user_id: user._id, file_id: options.fileId},
+                {perm_id: body.id, file_id: options.fileId}
+            ]});
+
+            if( perm )
+                Permissions.update(perm._id, {$set: {role: role}});
+            else
+                Permissions.insert({user_id: user._id, file_id: options.fileId, perm_id: body.id});
+        }else{
+            var user = Emails.findOne({email: options.value});
+            var perm = Permissions.findOne({$or: [
+                {email: options.value, file_id: options.fileId},
+                {perm_id: body.id, file_id: options.fileId}
+            ]});
+
+            if( perm )
+                Permissions.update(perm._id, {$set: {role: role}});
+            else
+                Permissions.insert({email: options.value, file_id: options.fileId, perm_id: body.id});
+        }
+    }).run();
+}

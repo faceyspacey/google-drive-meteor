@@ -13,3 +13,7 @@ roles
 jquery-ui
 jquery
 moment
+node-modules
+console-me
+gapitoken
+jwt-simple

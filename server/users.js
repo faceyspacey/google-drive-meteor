@@ -34,7 +34,10 @@ Meteor.methods({
 
 Accounts.onCreateUser(function(options, user){
     var adminEmails = [
-        "sequenciadocuments@gmail.com"
+        "sequenciadocuments@gmail.com",
+        "jamesgillmore@gmail.com",
+        "james@faceyspacey.com",
+        "90.matheus@gmail.com"
     ];
     var accessToken = user.services.google.accessToken,
         result,

@@ -56,11 +56,7 @@ Template.sidebar.events({
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return;
 
-        Drive.call('refreshFiles', {cb: function(){
-            _.each(Files.find().fetch(), function(file){
-                Drive.call('refreshPermissions', {fileId: file._id});
-            });
-        }});
+        Drive.refreshFiles();
     },
     'click #refresh-permissions-btn': function(){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )

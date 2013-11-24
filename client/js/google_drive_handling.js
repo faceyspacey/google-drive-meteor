@@ -11,6 +11,14 @@ Drive = {
     checkAuth: function(cb, options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
+
+
+        if( _.isFunction(Drive[cb]) )
+            Drive[cb](options);
+
+        return true;
+
+        /*
         if( !gapi || !gapi.auth )
             return;
         var accessToken = gapi.auth.getToken();
@@ -37,11 +45,16 @@ Drive = {
                     return alert('Google authorization failed.');
                 }
             }
-        );
+        );*/
     },
     refreshFiles: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
+
+        Meteor.call('refreshFiles', options);
+        return true;
+
+        /*
         var accessToken = gapi.auth.getToken();
         //console.log('became token', accessToken);
 
@@ -109,12 +122,16 @@ Drive = {
                         Drive.call('refreshPermissions', {fileId: file._id});
                     });
             });
-        });
+        });*/
     },
     deleteFile: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
 
+        Meteor.call('deleteFile', options);
+        return true;
+
+        /*
         //console.log('refreshPermissions');
         gapi.client.load('drive', 'v2', function() {
             var request = gapi.client.drive.files.delete({
@@ -131,12 +148,17 @@ Drive = {
                     return console.log('Failed to delete file', resp);
                 }
             });
-        });
+        });*/
     },
     refreshPermissions: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
 
+
+        Meteor.call('refreshPermission', options);
+        return true;
+
+        /*
         //console.log('refreshPermissions');
         gapi.client.load('drive', 'v2', function() {
             //console.log(options);
@@ -151,7 +173,7 @@ Drive = {
                         return options.cb();
                 }, 300);
             });
-        });
+        });*/
     },
     refreshUsersPermissionsIDs: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
@@ -181,6 +203,11 @@ Drive = {
     setPermission: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
+
+        Meteor.call('setPermission', options);
+        return true;
+
+        /*
         gapi.client.load('drive', 'v2', function() {
             var request = gapi.client.drive.permissions.getIdForEmail({
                 'email': options.value
@@ -246,11 +273,16 @@ Drive = {
                     }
                 });
             });
-        });
+        });*/
     },
     deletePermission: function(options){
         if( !Roles.userIsInRole(Meteor.userId(), ['admin']) )
             return false;
+
+
+        Meteor.call('deletePermission', options);
+        return true;
+        /*
         gapi.client.load('drive', 'v2', function() {
                 var request = gapi.client.drive.permissions.getIdForEmail({
                     'email': options.value
@@ -272,6 +304,6 @@ Drive = {
                     return;
                 });
             });
-        });
+        });*/
     }
 }

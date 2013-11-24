@@ -29,7 +29,7 @@ Files.allow({
 });
 
 Fiber = Npm.require("fibers");
-
+/*
 Meteor.methods({
     refreshFiles: function(items){
 
@@ -57,4 +57,4 @@ Meteor.methods({
 
         return true;
     }
-});
+});*/

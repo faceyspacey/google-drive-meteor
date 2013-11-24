@@ -2,27 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/EmailModel.js" afterPath="$PROJECT_DIR$/client/js/models/EmailModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/UserModel.js" afterPath="$PROJECT_DIR$/client/js/models/UserModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/files_list.html" afterPath="$PROJECT_DIR$/client/templates/files_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/gapitoken/gapitoken.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/.gitignore" afterPath="$PROJECT_DIR$/packages/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/collections.js" afterPath="$PROJECT_DIR$/client/js/collections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/files.js" afterPath="$PROJECT_DIR$/server/files.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/files_list.js" afterPath="$PROJECT_DIR$/client/template_js/files_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/google_drive_handling.js" afterPath="$PROJECT_DIR$/client/js/google_drive_handling.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/layout.html" afterPath="$PROJECT_DIR$/client/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/table.css" afterPath="$PROJECT_DIR$/client/css/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/users.html" afterPath="$PROJECT_DIR$/client/templates/users.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/users_list.html" afterPath="$PROJECT_DIR$/client/templates/users_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/google_handling.js" afterPath="$PROJECT_DIR$/server/google_handling.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/layout.js" afterPath="$PROJECT_DIR$/client/template_js/layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/permissions.js" afterPath="$PROJECT_DIR$/server/permissions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.lock" afterPath="$PROJECT_DIR$/smart.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/users.js" afterPath="$PROJECT_DIR$/server/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/users_list.js" afterPath="$PROJECT_DIR$/client/template_js/users_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385145178483" ignored="false" />
+    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385216495404" ignored="false" />
     <file path="/user_info.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609854002" ignored="false" />
     <file path="/user_info.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609915012" ignored="false" />
     <file path="/a.dummy" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384705429861" ignored="false" />
-    <file path="/google_drive_handling.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385146687667" ignored="false" />
+    <file path="/google_drive_handling.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385248623810" ignored="false" />
     <file path="/emails.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384713477765" ignored="false" />
     <file path="/files.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384709110689" ignored="false" />
-    <file path="/permissions.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384897257609" ignored="false" />
-    <file path="/google_handling.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384683014699" ignored="false" />
+    <file path="/permissions.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385250426557" ignored="false" />
+    <file path="/google_handling.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385260869220" ignored="false" />
     <file path="/google_api.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384616689979" ignored="false" />
     <file path="/files_list.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385146101568" ignored="false" />
     <file path="/app.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384696023794" ignored="false" />
@@ -34,18 +40,20 @@
     <file path="/UserModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385147510902" ignored="false" />
     <file path="/EmailModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385147632532" ignored="false" />
     <file path="/_Model.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384890939063" ignored="false" />
-    <file path="/server.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384703945292" ignored="false" />
+    <file path="/server.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385254168052" ignored="false" />
     <file path="/client.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384720662065" ignored="false" />
-    <file path="/users.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384881490821" ignored="false" />
+    <file path="/users.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385251169236" ignored="false" />
     <file path="/users.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384715406983" ignored="false" />
     <file path="/buttons.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384715374995" ignored="false" />
     <file path="/users_list.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385147880633" ignored="false" />
     <file path="/edit_user.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384719999160" ignored="false" />
     <file path="/main.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384969789282" ignored="false" />
     <file path="/router.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384855049811" ignored="false" />
-    <file path="/users_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384855071397" ignored="false" />
+    <file path="/users_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385240979321" ignored="false" />
     <file path="/collections.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384879952925" ignored="false" />
     <file path="/FileModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384891200766" ignored="false" />
+    <file path="/smart.json" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385260285024" ignored="false" />
+    <file path="/gapitoken.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385260536159" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,71 +73,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
+      <file leaf-file-name="gapitoken.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/gapitoken/gapitoken.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="3892" selection-end="3892" vertical-scroll-proportion="-13.25">
+            <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/css/table.css">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/jwt-simple/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="24" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
+            <state line="13" column="22" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_drive_handling.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="53" selection-start="5176" selection-end="5176" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="files_list.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/files_list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="6" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="32" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-11.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/users.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="36" selection-start="629" selection-end="629" vertical-scroll-proportion="-13.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/template_js/users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="44" selection-start="601" selection-end="601" vertical-scroll-proportion="0.5689655">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_list.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/users_list.js">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -137,19 +100,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
+      <file leaf-file-name="google_handling.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/google_handling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+            <state line="20" column="34" selection-start="510" selection-end="510" vertical-scroll-proportion="0.54744524">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
+      <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/roles/package.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="31" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roles_client.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/roles/roles_client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="8" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/gapitoken/node_modules/jws/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="33" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="smart.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="9" selection-start="577" selection-end="577" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/jwt-simple/package.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jwt.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/jwt-simple/lib/jwt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="0" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,31 +181,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/js/utilities.js" />
-        <option value="$PROJECT_DIR$/client/js/models/_Model.js" />
-        <option value="$PROJECT_DIR$/client/js/models/FileModel.js" />
-        <option value="$PROJECT_DIR$/client/template_js/layout.js" />
-        <option value="$PROJECT_DIR$/client/js/collections.js" />
-        <option value="$PROJECT_DIR$/server/permissions.js" />
-        <option value="$PROJECT_DIR$/client/css/main.css" />
-        <option value="$PROJECT_DIR$/client/templates/files_list.html" />
-        <option value="$PROJECT_DIR$/client/js/google_drive_handling.js" />
         <option value="$PROJECT_DIR$/client/template_js/files_list.js" />
-        <option value="$PROJECT_DIR$/client/templates/layout.html" />
-        <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
-        <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
-        <option value="$PROJECT_DIR$/client/css/table.css" />
-        <option value="$PROJECT_DIR$/client/templates/users_list.html" />
-        <option value="$PROJECT_DIR$/client/templates/users.html" />
+        <option value="$PROJECT_DIR$/client/template_js/layout.js" />
+        <option value="$PROJECT_DIR$/server/files.js" />
+        <option value="$PROJECT_DIR$/client/js/collections.js" />
+        <option value="$PROJECT_DIR$/client/template_js/users_list.js" />
+        <option value="$PROJECT_DIR$/server/permissions.js" />
+        <option value="$PROJECT_DIR$/client/js/google_drive_handling.js" />
+        <option value="$PROJECT_DIR$/server/users.js" />
+        <option value="$PROJECT_DIR$/packages/node-modules/server.js" />
+        <option value="$PROJECT_DIR$/packages/node-modules/package.js" />
+        <option value="$PROJECT_DIR$/packages/gapitoken/package.js" />
+        <option value="$PROJECT_DIR$/smart.json" />
+        <option value="$PROJECT_DIR$/packages/jwt-simple/package.js" />
+        <option value="$PROJECT_DIR$/packages/gapitoken/gapitoken.js" />
+        <option value="$PROJECT_DIR$/packages/jwt-simple/index.js" />
+        <option value="$PROJECT_DIR$/server/google_handling.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1317" />
-    <option name="y" value="24" />
-    <option name="width" value="1317" />
-    <option name="height" value="744" />
+    <option name="x" value="44" />
+    <option name="y" value="89" />
+    <option name="width" value="1307" />
+    <option name="height" value="714" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -271,8 +279,18 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,7 +304,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node-modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jwt-simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jwt-simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seqinc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gapitoken" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,6 +535,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/jwt-simple" />
+      <recent name="$PROJECT_DIR$/packages/gapitoken" />
+      <recent name="$PROJECT_DIR$/public/node_modules/gapitoken" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/js/lib" />
       <recent name="$PROJECT_DIR$/client/js" />
@@ -458,14 +561,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1317" y="24" width="1317" height="744" extended-state="6" />
+    <frame x="44" y="89" width="1307" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26514554" sideWeight="0.74539363" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27200633" sideWeight="0.74539363" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -541,114 +644,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/js/utilities.js">
+    <entry file="file://$PROJECT_DIR$/packages/moment/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/collections.js">
+    <entry file="file://$PROJECT_DIR$/packages/node-modules/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="24" selection-start="2212" selection-end="2370" vertical-scroll-proportion="0.0">
+        <state line="17" column="16" selection-start="431" selection-end="431" vertical-scroll-proportion="7.8">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/permissions.js">
+    <entry file="file://$PROJECT_DIR$/packages/node-modules/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="17" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.0">
+        <state line="9" column="3" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/files_list.html">
+    <entry file="file://$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/jws.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="88" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-11.041667">
+        <state line="22" column="30" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/buttons.css">
+    <entry file="file://$PROJECT_DIR$/packages/gapitoken/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/main.css">
+    <entry file="file://$PROJECT_DIR$/packages/gapitoken/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4090" selection-start="4834" selection-end="4834" vertical-scroll-proportion="0.0">
+        <state line="7" column="5" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/google_drive_handling.js">
+    <entry file="file://$PROJECT_DIR$/packages/gapitoken/node_modules/jws/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="53" selection-start="5176" selection-end="5176" vertical-scroll-proportion="0.0">
+        <state line="2" column="33" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/files_list.js">
+    <entry file="file://$PROJECT_DIR$/smart.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="6" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.0">
+        <state line="19" column="9" selection-start="577" selection-end="577" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/users_list.js">
+    <entry file="file://$PROJECT_DIR$/packages/jwt-simple/package.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/jwt-simple/lib/jwt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/packages/roles/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="3892" selection-end="3892" vertical-scroll-proportion="-13.25">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
+    <entry file="file://$PROJECT_DIR$/packages/roles/roles_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+        <state line="58" column="8" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
+    <entry file="file://$PROJECT_DIR$/packages/jwt-simple/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+        <state line="13" column="22" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/table.css">
+    <entry file="file://$PROJECT_DIR$/packages/gapitoken/gapitoken.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="24" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
+    <entry file="file://$PROJECT_DIR$/server/google_handling.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="629" selection-end="629" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="601" selection-end="601" vertical-scroll-proportion="0.5689655">
+        <state line="20" column="34" selection-start="510" selection-end="510" vertical-scroll-proportion="0.54744524">
           <folding />
         </state>
       </provider>

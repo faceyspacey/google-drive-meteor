@@ -58,7 +58,7 @@ Meteor.methods({
                     permId = permId ? permId : perm._id;
                 }else{
                     //console.log('email', item.role, role);
-                    user = Emails.findOne({email: item.emailAddress});
+                    user = Emails.findOne({$or: [{email: item.emailAddress}, {perm_id: item.id}]});
                     if( user ){
                         //console.log('userEmail', user.email);
                         var perm = Permissions.findOne({file_id: fileId, $or: [{user_id: user._id}, {perm_id: item.id}]});
@@ -69,6 +69,8 @@ Meteor.methods({
                         permId = permId ? permId : perm._id;
                     }
                 }
+
+                console.log(item.id+': '+role);
 
                 if( permId != null )
                     permissions.push(permId);

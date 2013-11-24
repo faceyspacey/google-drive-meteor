@@ -34,10 +34,10 @@ Subscriptions = {
 }
 
 
-Meteor.logout();
+//Meteor.logout();
 
 Meteor.startup(function(){
-    Meteor.logout();
+    //Meteor.logout();
     /*
     Meteor.logout(function(){
         console.log('logging out previous user');
@@ -69,11 +69,7 @@ Meteor.startup(function(){
         if (Meteor.user()) {
             Meteor.setTimeout(function(){
                 if( Roles.userIsInRole(Meteor.userId(), ['admin']) ){
-                    Drive.call('refreshFiles', {cb: function(){
-                        /*_.each(Files.find().fetch(), function(file){
-                            Drive.call('refreshPermissions', {fileId: file._id});
-                        });*/
-                    }});
+                    Drive.refreshFiles();
                 }
             }, 1000);
         }else{

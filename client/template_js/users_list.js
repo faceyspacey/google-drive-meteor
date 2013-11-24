@@ -74,19 +74,19 @@ Template.users_list.events({
     },
     "click .can-view-btn": function(e){
         var file_id = Router.current().params['file_id'],
-            user = Meteor.users.findOne({_id: this._id});
+            user = this;
 
         user.assignPermission(file_id, 'view');
     },
     "click .can-edit-btn": function(e){
         var file_id = Router.current().params['file_id'],
-            user = Meteor.users.findOne({_id: this._id});
+            user = this;
 
         user.assignPermission(file_id, 'edit');
     },
     "click .can-nothing-btn": function(e){
         var file_id = Router.current().params['file_id'],
-            user = Meteor.users.findOne({_id: this._id});
+            user = this;
 
         user.assignPermission(file_id, 'nothing');
     },
