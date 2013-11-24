@@ -21,8 +21,8 @@ Template.layout.events({
 Template.navbar_left.helpers({
     filesCount: function(){ return Files.find({}).count(); },
     allUsersCount: function(){ return Meteor.users.find().count()+Emails.find().count()},
-    usersCount: function(){ return Meteor.users.find().count(); },
-    emailsCount: function(){ return Emails.find().count(); }
+    adminsCount: function(){ return Meteor.users.find({roles: ['admin']}).fetch().concat(Emails.find({roles: ['admin']}).fetch()).length; },
+    customersCount: function(){ data = Meteor.users.find({roles: ['customer']}).fetch().concat(Emails.find({roles: ['customer']}).fetch()).length; }
 });
 
 
@@ -47,8 +47,8 @@ Template.page_title.helpers({
 Template.sidebar.helpers({
     filesCount: function(){ return Files.find({}).count(); },
     allUsersCount: function(){ return Meteor.users.find().count()+Emails.find().count()},
-    usersCount: function(){ return Meteor.users.find().count(); },
-    emailsCount: function(){ return Emails.find().count(); }
+    adminsCount: function(){ return Meteor.users.find({roles: ['admin']}).fetch().concat(Emails.find({roles: ['admin']}).fetch()).length; },
+    customersCount: function(){ return Meteor.users.find({roles: ['customer']}).fetch().concat(Emails.find({roles: ['customer']}).fetch()).length; }
 });
 
 Template.sidebar.events({
@@ -71,3 +71,16 @@ Template.sidebar.events({
 Template.sidebar.rendered = function(){
     initializeSidebar();
 };
+
+/** NAVIGATION HELPERS */
+
+Handlebars.registerHelper('isCurrent', function(pathName){
+    return Router.current().route.name == pathName ? 'current' : '';
+});
+
+Handlebars.registerHelper('isCurrentSidebar', function(pathName){
+    if( pathName == 'usersSidebar' )
+        return ['onlyAdmins', 'onlyCustomers', 'users'].indexOf(Router.current().route.name) >-1 ? 'current' : '';
+
+    return '';
+});

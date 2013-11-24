@@ -1,3 +1,27 @@
 <template name="page_files">
+    {{>copy_to_clipboard}}
+
     {{>files_list }}
+</template>
+
+<template name="copy_to_clipboard">
+    <div class="widget box">
+        <div class="widget-header">
+            <div class="row">
+                <div class="col-md-12"><h4>You can share files with the email below</h4></div>
+            </div>
+        </div>
+
+        <div class="widget-content">
+            <div class="row">
+                <div class="col-md-9">
+                    <input id="email-to-share" class="form-control" onclick="this.select();" value="709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com"/>
+                </div>
+                <div id="copy-to-clipboard" class="col-md-2 btn btn-sm btn-primary" disabled="disabled">
+                    <i class="fa fa-long-arrow-left pull-left" style="line-height: 18px;"></i>
+                    Click then "Ctrl + C"
+                </div>
+            </div>
+        </div>
+    </div>
 </template>

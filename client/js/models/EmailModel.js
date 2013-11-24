@@ -15,12 +15,17 @@ EmailModel = function(doc) {
     };
     this.is_active = false;
 
-    this.getAttr = function(attr){
-        return this.profile && this.profile[attr] ? this.profile[attr] : ' - ';
-    };
 
     this.getEmail = function(){
         return this.email ? this.email : 'no email address';
+    };
+
+    this.getRole = function(){
+        return this.roles && this.roles[0] ? this.roles[0] : 'customer';
+    };
+
+    this.getAttr = function(attr){
+        return this.profile && this.profile[attr] ? this.profile[attr] : ' - ';
     };
 
     this.getName = function(){

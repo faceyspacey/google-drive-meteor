@@ -58,9 +58,16 @@ Accounts.onCreateUser(function(options, user){
         Roles.addUsersToRoles(new_user._id, ['admin']);
         new_user.roles = ['admin'];
     }else{
+        var email = Emails.findOne({email: user.services.google.email});
+        if( email && email.profile.role == 'admin' )
+            Roles.addUsersToRoles(new_user._id, ['admin']);
+            new_user.roles = ['admin'];
+    }
+
+    /*else{
         Roles.addUsersToRoles(new_user._id, ['customer']);
         new_user.roles = ['customer'];
-    }
+    }*/
 
     new_user.profile = result.data;
 

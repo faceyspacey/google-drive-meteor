@@ -34,14 +34,15 @@ Template.files_list.helpers({
             data = Files.find({_id: {$in: fileIDs}}).fetch();
         }
 
-        data = _.sortBy(data, function(row){
-            if( _.isFunction(row[sortBy]) )
-                return row[sortBy].call();
-            else
+        var new_data = _.sortBy(data, function(row){
+            if( _.isFunction(row[sortBy]) ){
+                return row[sortBy]();
+            }else{
                 return row[sortBy];
+            }
         });
 
-        return sortDir == -1 ? data : data.reverse();
+        return sortDir == 1 ? new_data : new_data.reverse();
     },
     sorted : function(field){
         var sortBy = Session.get('home_file_sort_by'),

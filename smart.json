@@ -9,7 +9,7 @@
         "console-me": {
             "name": "console-me",
             "git": "https://github.com/aldeed/meteor-console-me.git"
-        },
+        }/*,
         "gapitoken": {
             "name": "gapitoken",
             "git": "https://github.com/bsphere/node-gapitoken.git"
@@ -17,6 +17,6 @@
         "jwt-simple": {
             "name": "jwt-simple",
             "git": "https://github.com/hokaccha/node-jwt-simple.git"
-        }
+        }*/
     }
 }

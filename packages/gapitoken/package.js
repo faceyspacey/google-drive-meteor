@@ -1,5 +1,10 @@
+
+Npm.depends({
+    gapitoken: "0.1.0"
+});
+
 Package.describe({
-  summary: "Google Api"
+    summary: "Google Api"
 });
 
 Package.on_use(function (api) {

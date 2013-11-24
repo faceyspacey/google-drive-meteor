@@ -1,11 +1,11 @@
 
-ConsoleMe.enabled = true;
+ConsoleMe.enabled = false;
 
 //console.log(NodeModules);
 
-//NodeModules.setPath('/public/node_modules');
+//NodeModules.setPath('/public');
 //var GAPI = Npm.require('gapitoken');
-console.log('GAPI: ', GAPI);
+//console.log('GAPI: ', GAPI);
 const calRoot = "https://www.googleapis.com/drive/v2";
 const request = Npm.require('request');
 
@@ -72,14 +72,11 @@ CGEPQPbVcfqz+g==\n\
         Drive.checkAuth(cb, options);
     },
     checkAuth: function(cb, options){
-        //console.log('checkAuth', Drive.gapi);
         if( Drive.gapi == null )
             return Drive.callAuth(cb, options);
 
         Drive.gapi.getToken(function(token) {
-            //console.log('token:', token);
             if( token == null && Drive.gapi && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
-                //console.log(Drive.gapi);
                 if( _.isFunction(Drive[cb]) )
                     Drive[cb](options);
                 return true;
@@ -89,18 +86,14 @@ CGEPQPbVcfqz+g==\n\
         return Drive.callAuth(cb, options);
     },
     callAuth: function(cb, options){
-        //console.log('callAuth', Drive.gapi);
-            //console.log(Drive.creds);
         Drive.gapi = new GAPI({
             iss: Drive.creds.iss,
             scope: Drive.creds.scope,
             key: Drive.creds.key
         }, function(err) {
             if (err) { return console.log(err); }
-            //console.log('callAuth no error', Drive.gapi);
 
             Drive.gapi.getToken(function(token) {
-                //console.log(Drive.gapi);
                 if( token == null && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
                     if( _.isFunction(Drive[cb]) )
                         Drive[cb](options);
@@ -123,7 +116,6 @@ CGEPQPbVcfqz+g==\n\
                     if( body.error ) return console.log(body);
 
                     Fiber(function() {
-                        console.log(user._id, body.id);
                         if( user.model_type == 'user' )
                             Meteor.users.update(user._id, {$set: {perm_id: body.id}});
                         else
@@ -151,14 +143,12 @@ CGEPQPbVcfqz+g==\n\
                         delete file.mimeType;
                         delete file.exportLinks;
                         file_id = file.id;
-                        //console.log('update', item);
                         Files.update(file.id, {$set: file});
                     }else{
                         file = item;
                         file._id = file.id;
                         delete file.mimeType;
                         delete file.exportLinks;
-                        //console.log('insert', item);
                         file_id = Files.insert(file);
                         file = Files.findOne(file_id);
                     }
@@ -166,8 +156,6 @@ CGEPQPbVcfqz+g==\n\
                     if( file_id != null && file_id != undefined)
                         files.push(file_id);
                 });
-
-                //console.log(files);
 
                 _.each(Files.find({_id: {$nin: files}}).fetch(), function(file){
                     Files.remove(file._id);
@@ -184,7 +172,6 @@ CGEPQPbVcfqz+g==\n\
         });
     },
     refreshPermissions: function(options){
-        //console.log('refresh permissions for:', options.fileId);
         var token = "?access_token="+Drive.gapi.token;
 
         request.get({
@@ -201,14 +188,13 @@ CGEPQPbVcfqz+g==\n\
         return true;
     },
     deleteFile: function(options){
-        //console.log('refresh permissions for:', options.fileId);
         var token = "?access_token="+Drive.gapi.token;
 
         request.del({
             url: calRoot+"/files/"+options.fileId+""+token,
             json:true,
         }, function(err, res, body){
-            if( body.error ) return console.log(body);
+            if( body ) return console.log(body);
 
             Fiber(function() {
                 Files.remove(options.fileId);
@@ -228,7 +214,6 @@ CGEPQPbVcfqz+g==\n\
                 url: calRoot+"/permissionIds/"+options.value+""+token,
                 json:true,
             }, function(err, res, body){
-                console.log(body);
                 if( body.error ) return console.log(body);
 
                 request.get({
@@ -237,7 +222,6 @@ CGEPQPbVcfqz+g==\n\
                 }, function(err, res, body){
                     if( body.error && body.error.code != 404 ) return console.log(body);
 
-                    //var data = jwt.encode({role: options.role}, "xxx");
                     if( body.error && body.error.code == 404  ){
                         request.post({
                             url: calRoot+"/files/"+options.fileId+"/permissions"+token,
@@ -266,7 +250,6 @@ CGEPQPbVcfqz+g==\n\
                         });
                     }
 
-                    //Meteor.call('refreshPermissions', resp.items, options.fileId);
                 });
             });
         }).run();
@@ -274,21 +257,20 @@ CGEPQPbVcfqz+g==\n\
         return true;
     },
     deletePermission: function(options){
-        //console.log('refresh permissions for:', options.fileId);
         var token = "?access_token="+Drive.gapi.token;
 
         request.get({
             url: calRoot+"/permissionIds/"+options.value+""+token,
             json:true,
         }, function(err, res, body){
-            console.log(err, body);
+            //console.log(err, body);
             if( !body.id || body.error ) return console.log(body);
 
             request.del({
                 url: calRoot+"/files/"+options.fileId+"/permissions/"+body.id+""+token,
                 json:true,
             }, function(err, res, body){
-                console.log(body);
+                //console.log(body);
                 if( !body.id || body.error ) return console.log(body);
 
                 if( options.userType == 'user'){
@@ -303,7 +285,7 @@ CGEPQPbVcfqz+g==\n\
                         {perm_id: body.id, file_id: options.fileId}
                     ]});
                 }
-                console.log(perm);
+                //console.log(perm);
 
                 Fiber(function() {
                     if( perm )

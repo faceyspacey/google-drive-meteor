@@ -1,4 +1,4 @@
-;(function () {
+
 /*
  * jwt-simple
  *
@@ -29,7 +29,7 @@ var algorithmMap = {
 /**
  * expose object
  */
-var jwt = {};
+jwt = {};
 
 
 /**
@@ -142,5 +142,3 @@ function base64urlEncode(str) {
 function base64urlEscape(str) {
     return str.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
 }
-
-}());

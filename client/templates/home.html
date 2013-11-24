@@ -1,6 +1,7 @@
 <template name="page_home">
 
     {{#if isInRole 'admin'}}
+        {{>copy_to_clipboard}}
         {{>files_list nullObj}}
         {{>users_list nullObj}}
     {{/if}}

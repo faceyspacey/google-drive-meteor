@@ -32,7 +32,18 @@ Router.map(function () {
         waitOn: function(){
             return Session.set('page_title', 'Edit user permissions');
         },
-        data: function(){ return {user_id: this.params.user_id, model_type: this.params.model_type}; }
+        data: function(){
+            if( ['user', 'email'].indexOf(this.params.model_type) > -1 )
+                var model_type = this.params.model_type;
+            else{
+                var user = Meteor.users.findOne(this.params.user_id);
+                var model_type = user ? 'user' : 'email';
+            }
+            return {
+                user_id: this.params.user_id,
+                model_type: model_type
+            };
+        }
     });
     this.route('editFile', {
         path: '/editFile/:file_id',
@@ -56,26 +67,22 @@ Router.map(function () {
         waitOn: function(){
             return Session.set('page_title', 'All Users');
         },
-        data: function(){ return {parameters: {type: 'both'}}; }
+        data: function(){ return {parameters: {type: 'both', role: 'both'}}; }
     });
-    this.route('onlyUsers', {
-        path: '/users/registered',
+    this.route('onlyAdmins', {
+        path: '/users/admins',
         template: 'page_users',
         waitOn: function(){
-            return Session.set('page_title', 'Registered Users');
+            return Session.set('page_title', 'Admins');
         },
-        data: function(){ return {parameters: {type: 'user'}}; }
+        data: function(){ return {parameters: {type: 'both', role: 'admin'}}; }
     });
-    this.route('onlyEmails', {
-        path: '/users/pre_registered',
+    this.route('onlyCustomers', {
+        path: '/users/customers',
         template: 'page_users',
         waitOn: function(){
-            return Session.set('page_title', 'Pre-registered Users');
+            return Session.set('page_title', 'Customers');
         },
-        data: function(){ return {parameters: {type: 'email'}}; }
+        data: function(){ return {parameters: {type: 'both', role: 'customer'}}; }
     });
-});
-
-Handlebars.registerHelper('isCurrent', function(pathName){
-    return Router.current().route.name == pathName ? 'current' : '';
 });

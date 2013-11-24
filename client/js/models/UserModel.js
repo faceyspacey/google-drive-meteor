@@ -29,6 +29,10 @@ UserModel = function(doc){
         return this.profile && this.profile.email ? this.profile.email : 'no email address';
     };
 
+    this.getRole = function(){
+        return this.roles && this.roles[0] ? this.roles[0] : 'customer';
+    };
+
     this.getAttr = function(attr){
         return this.profile && this.profile[attr] ? this.profile[attr] : ' - ';
     };

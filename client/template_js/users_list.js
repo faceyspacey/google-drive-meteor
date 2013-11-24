@@ -3,7 +3,7 @@
 
 Template.users_list.helpers({
     listParams: function(){
-        return {file_id: this.file_id, type: this.type};
+        return {file_id: this.file_id, type: this.type, role: this.role};
     },
     usersCount: function(params){
         var data = [],
@@ -11,7 +11,13 @@ Template.users_list.helpers({
         switch(params.type){
             case 'user':    data = Meteor.users.find().fetch(); break;
             case 'email':   data = Emails.find().fetch(); break;
-            default:        data = Meteor.users.find().fetch().concat(Emails.find().fetch()); break;
+            default:        if( params.role == 'admin' )
+                                data = Meteor.users.find({roles: ['admin']}).fetch().concat(Emails.find({roles: ['admin']}).fetch());
+                            else if( params.role == 'customer' )
+                                data = Meteor.users.find({roles: ['customer']}).fetch().concat(Emails.find({roles: ['customer']}).fetch());
+                            else
+                                data = Meteor.users.find().fetch().concat(Emails.find().fetch());
+                            break;
         }
         return data.length;
     },
@@ -29,17 +35,24 @@ Template.users_list.helpers({
         switch(params.type){
             case 'user':    data = Meteor.users.find().fetch(); break;
             case 'email':   data = Emails.find().fetch(); break;
-            default:        data = Meteor.users.find().fetch().concat(Emails.find().fetch()); break;
+            default:        if( params.role == 'admin' )
+                                data = Meteor.users.find({roles: ['admin']}).fetch().concat(Emails.find({roles: ['admin']}).fetch());
+                            else if( params.role == 'customer' )
+                                data = Meteor.users.find({roles: ['customer']}).fetch().concat(Emails.find({roles: ['customer']}).fetch());
+                            else
+                                data = Meteor.users.find().fetch().concat(Emails.find().fetch());
+                            break;
         }
 
-        data = _.sortBy(data, function(row){
-            if( _.isFunction(row[sortBy]) )
-                return row[sortBy].call();
-            else
+        var new_data = _.sortBy(data, function(row){
+            if( _.isFunction(row[sortBy]) ){
+                return row[sortBy]();
+            }else{
                 return row[sortBy];
+            }
         });
 
-        return sortDir == -1 ? data : data.reverse();
+        return sortDir == 1 ? new_data : new_data.reverse();
     },
     sorted : function(field){
         var sortBy = Session.get('home_user_sort_by'),
@@ -66,6 +79,7 @@ Template.users_list.events({
         $(table).find('.sortable').removeClass('sorted-asc').removeClass('sorted-desc');
         $(e.target).addClass('sorted-'+(sortDir > -1 ? 'asc' : 'desc'));
 
+        console.log(sortBy);
         Session.set('home_user_sort_dir', sortDir);
         Session.set('home_user_sort_by', sortBy);
     },

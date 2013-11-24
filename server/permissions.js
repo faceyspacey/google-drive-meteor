@@ -70,7 +70,7 @@ Meteor.methods({
                     }
                 }
 
-                console.log(item.id+': '+role);
+                //console.log(item.id+': '+role);
 
                 if( permId != null )
                     permissions.push(permId);
