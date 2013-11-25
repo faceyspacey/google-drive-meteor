@@ -59,7 +59,7 @@ Handlebars.registerHelper('isFileOwned', function(userId){
 
 Handlebars.registerHelper('canAdminShareIt', function(fileId){
     var fileId = fileId ? fileId : Router.current().params['file_id'],
-        user = Meteor.users.findOne({"profile.email": 'sequenciadocuments@gmail.com'});
+        user = Meteor.users.findOne('systememail');
 
     if( !user )
         return false;

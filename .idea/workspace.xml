@@ -2,767 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/.bin/tap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/test/base64url.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/base64url/test/test.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/bin/tap-http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/bin/tap-reader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/bin/tap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/coverage-example/lib/bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/coverage-example/lib/foo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/coverage-example/test/bar.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/coverage-example/test/baz.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/coverage-example/test/foo.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/example/lib/math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/example/test/test-example.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-assert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-browser-harness.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-consumer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-cov-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-global-harness.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-harness.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-producer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-results.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-runner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/lib/tap-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/.bin/nopt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/example/eq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/test/eq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/example/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/test/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/cmp_array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/cmp_object.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/comma_first.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/256.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/column.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/cursor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/http_spin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/lucky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/progress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/spin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/lib/encode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/example/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/test/NaN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/test/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/test/neg-vs-pos-0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/scrub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/circular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/has.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/instance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/interface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/lib/deep_equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/mutability.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/obj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/siblings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/stop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/subexpr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/super_deep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/testling/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/test/diffing-NaN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/test/html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/inherits-old.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/examples/pow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/chmod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/clobber.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/mkdirp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/perm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/perm_sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/race.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/rel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/return.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/return_sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/root.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/umask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/umask_sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/bin/nopt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/examples/my-program.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/lib/nopt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/lib/abbrev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/prof.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/tiny.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/top/run.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/top/src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/microwave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/.bin/uglifyjs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/scrub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/circular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/instance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/interface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/lib/deep_equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/mutability.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/obj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/siblings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/stop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/subexpr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/super_deep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/README.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/README.org" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/bin/uglifyjs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/docstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/object-ast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/parse-js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/process.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/squeeze-more.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/beautify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/testparser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/concatstring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/const.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/forstatement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/if.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/ifreturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue34.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue48.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue68.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue69.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/null_string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/strict-equals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/concatstring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/const.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/forstatement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/if.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/ifreturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue34.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue48.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue54.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue68.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue69.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/null_string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/strict-equals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/hoist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/instrument.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/instrument2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/uglify-js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/ast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/err.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/fail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/fail/src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/label.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/microwave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/parent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/test/cover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/test/return.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/test/src/cover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/test/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/test/interface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/test/src/coverage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/async-map-ordered.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/async-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/bind-actor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/chain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/slide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/yamlish.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test-disabled/bailout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test-disabled/foo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test-disabled/t.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/buffer_compare.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/deep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/end-exception/t.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/executed.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/expose-gc-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/independent-timeouts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/isolated-conf-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/meta-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/nested-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/non-tap-output.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/not-executed.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/output-childtest-description.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/result-trap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/segv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/simple-harness-test-with-plan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/simple-harness-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/test-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/timeout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/undefined_indented.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/ec256-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/ec256-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/ec256-wrong-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/ec256-wrong-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/jws.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/rsa-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/rsa-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/rsa-wrong-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/test/rsa-wrong-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/gapitoken/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/jwt-simple/lib/jwt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/gapitoken.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/.bin/tap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/test/base64url.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/base64url/test/test.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/bin/tap-http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/bin/tap-reader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/bin/tap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/coverage-example/lib/bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/coverage-example/lib/foo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/coverage-example/test/bar.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/coverage-example/test/baz.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/coverage-example/test/foo.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/example/lib/math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/example/test/test-example.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-assert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-browser-harness.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-consumer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-cov-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-global-harness.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-harness.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-producer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-results.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-runner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/lib/tap-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/.bin/nopt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/example/eq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/buffer-equal/test/eq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/example/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/deep-equal/test/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/cmp_array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/cmp_object.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/comma_first.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/example/string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/256.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/column.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/cursor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/http_spin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/lucky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/progress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/example/spin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/lib/encode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/charm/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/example/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/test/NaN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/test/cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/deep-is/test/neg-vs-pos-0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/scrub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/examples/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/circular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/has.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/instance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/interface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/lib/deep_equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/mutability.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/obj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/siblings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/stop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/subexpr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/test/super_deep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/node_modules/traverse/testling/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/test/diffing-NaN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/difflet/test/html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/inherits-old.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/inherits/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/examples/pow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/chmod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/clobber.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/mkdirp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/perm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/perm_sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/race.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/rel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/return.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/return_sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/root.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/umask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/mkdirp/test/umask_sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/bin/nopt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/examples/my-program.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/lib/nopt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/lib/abbrev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/node_modules/abbrev/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/nopt/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/prof.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/tiny.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/top/run.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/example/top/src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/microwave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/web/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/example/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/.bin/uglifyjs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/scrub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/examples/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/circular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/instance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/interface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/leaves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/lib/deep_equal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/mutability.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/obj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/siblings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/stop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/subexpr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/test/super_deep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/README.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/README.org" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/bin/uglifyjs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/docstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/object-ast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/parse-js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/process.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/lib/squeeze-more.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/beautify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/testparser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/array4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/concatstring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/const.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/forstatement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/if.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/ifreturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue34.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue48.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue68.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue69.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/issue9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/null_string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/strict-equals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/expected/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/array4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/concatstring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/const.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/forstatement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/if.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/ifreturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue34.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue48.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue54.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue68.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue69.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/issue9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/null_string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/strict-equals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/compress/test/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/test/unit/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/hoist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/instrument.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/instrument2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/tmp/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/uglify-js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/ast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/err.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/fail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/fail/src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/label.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/microwave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/parent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/test/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/test/cover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/test/return.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/node_modules/bunker/test/src/cover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/test/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/test/interface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/runforcover/test/src/coverage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/async-map-ordered.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/async-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/bind-actor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/chain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/lib/slide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/slide/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/node_modules/yamlish/yamlish.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test-disabled/bailout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test-disabled/foo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test-disabled/t.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/buffer_compare.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/deep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/end-exception/t.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/executed.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/expose-gc-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/independent-timeouts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/isolated-conf-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/meta-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/nested-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/non-tap-output.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/not-executed.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/output-childtest-description.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/result-trap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/segv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/simple-harness-test-with-plan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/simple-harness-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/test-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/timeout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/trivial-success.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/node_modules/tap/test/undefined_indented.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/ec256-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/ec256-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/ec256-wrong-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/ec256-wrong-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/jws.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/rsa-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/rsa-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/rsa-wrong-private.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/node_modules/jws/test/rsa-wrong-public.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/node_modules/gapitoken/package.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/.npmignore" afterPath="$PROJECT_DIR$/client/js/lib/jquery.zclip.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/gapitoken/node_modules/jws/node_modules/tap/test/trivial-success.js" afterPath="$PROJECT_DIR$/client/template_js/files.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/EmailModel.js" afterPath="$PROJECT_DIR$/client/js/models/EmailModel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/UserModel.js" afterPath="$PROJECT_DIR$/client/js/models/UserModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/edit_user.html" afterPath="$PROJECT_DIR$/client/templates/edit_user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/edit_user.js" afterPath="$PROJECT_DIR$/client/template_js/edit_user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/files.html" afterPath="$PROJECT_DIR$/client/templates/files.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/files_list.js" afterPath="$PROJECT_DIR$/client/template_js/files_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/gapitoken/gapitoken.js" afterPath="$PROJECT_DIR$/packages/gapitoken/gapitoken.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/google_handling.js" afterPath="$PROJECT_DIR$/server/google_handling.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/home.html" afterPath="$PROJECT_DIR$/client/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/jwt-simple/index.js" afterPath="$PROJECT_DIR$/packages/jwt-simple/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/layout.html" afterPath="$PROJECT_DIR$/client/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/layout.js" afterPath="$PROJECT_DIR$/client/template_js/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/gapitoken/package.js" afterPath="$PROJECT_DIR$/packages/gapitoken/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/permissions.js" afterPath="$PROJECT_DIR$/server/permissions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/router.js" afterPath="$PROJECT_DIR$/client/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/users.html" afterPath="$PROJECT_DIR$/client/templates/users.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/users.js" afterPath="$PROJECT_DIR$/client/template_js/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/client.js" afterPath="$PROJECT_DIR$/client/js/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/edit_file.html" afterPath="$PROJECT_DIR$/client/templates/edit_file.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/main.css" afterPath="$PROJECT_DIR$/client/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/table.css" afterPath="$PROJECT_DIR$/client/css/table.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/users.js" afterPath="$PROJECT_DIR$/server/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/users_list.js" afterPath="$PROJECT_DIR$/client/template_js/users_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/users_list.html" afterPath="$PROJECT_DIR$/client/templates/users_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385284748891" ignored="false" />
+    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385397563574" ignored="false" />
     <file path="/user_info.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609854002" ignored="false" />
     <file path="/user_info.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609915012" ignored="false" />
     <file path="/a.dummy" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384705429861" ignored="false" />
@@ -779,17 +31,17 @@
     <file path="/layout.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385297148762" ignored="false" />
     <file path="/layout.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385305149452" ignored="false" />
     <file path="/files_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385146334514" ignored="false" />
-    <file path="/UserModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385293612575" ignored="false" />
+    <file path="/UserModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385398886972" ignored="false" />
     <file path="/EmailModel.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385293697238" ignored="false" />
     <file path="/_Model.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384890939063" ignored="false" />
     <file path="/server.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385254168052" ignored="false" />
     <file path="/client.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384720662065" ignored="false" />
-    <file path="/users.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385297398155" ignored="false" />
+    <file path="/users.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385398238745" ignored="false" />
     <file path="/users.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385297200378" ignored="false" />
     <file path="/buttons.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384715374995" ignored="false" />
-    <file path="/users_list.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385147880633" ignored="false" />
+    <file path="/users_list.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385399944104" ignored="false" />
     <file path="/edit_user.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384719999160" ignored="false" />
-    <file path="/main.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384969789282" ignored="false" />
+    <file path="/main.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385399375819" ignored="false" />
     <file path="/router.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385296884183" ignored="false" />
     <file path="/users_list.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385303596987" ignored="false" />
     <file path="/collections.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384879952925" ignored="false" />
@@ -802,6 +54,8 @@
     <file path="/files.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385300644069" ignored="false" />
     <file path="/jquery.zclip.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385299843113" ignored="false" />
     <file path="/.gitignore" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385324494772" ignored="false" />
+    <file path="/edit_file.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385398761721" ignored="false" />
+    <file path="/table.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385400750206" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -821,48 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="google_handling.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/google_handling.js">
+      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="24" selection-start="3157" selection-end="3157" vertical-scroll-proportion="-14.375">
-              <folding>
-                <element signature="n#style#0;n#i#1;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/gapitoken/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="5" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_list.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/users_list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="6" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="files_list.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/template_js/files_list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="6" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
+            <state line="57" column="3" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -871,7 +87,16 @@
       <file leaf-file-name="UserModel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="6" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
+            <state line="38" column="6" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_file.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/template_js/edit_file.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -880,25 +105,25 @@
       <file leaf-file-name="EmailModel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="18" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+            <state line="29" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smart.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/smart.json">
+      <file leaf-file-name="edit_file.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/edit_file.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="581" selection-end="581" vertical-scroll-proportion="0.5734407">
+            <state line="20" column="16" selection-start="861" selection-end="861" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_user.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/edit_user.html">
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="22" column="13" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -907,7 +132,34 @@
       <file leaf-file-name="users_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="59" selection-start="752" selection-end="752" vertical-scroll-proportion="20.625">
+            <state line="55" column="34" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-13.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/css/table.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="19" selection-start="749" selection-end="749" vertical-scroll-proportion="0.67241377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="181" column="10846" selection-start="39893" selection-end="39893" vertical-scroll-proportion="-12.68">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilities.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/utilities.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -931,14 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/js/router.js" />
-        <option value="$PROJECT_DIR$/client/template_js/layout.js" />
-        <option value="$PROJECT_DIR$/client/templates/users.html" />
-        <option value="$PROJECT_DIR$/client/template_js/users.js" />
-        <option value="$PROJECT_DIR$/public/ZeroClipboard.min.js" />
-        <option value="$PROJECT_DIR$/client/js/lib/jquery.zclip.js" />
-        <option value="$PROJECT_DIR$/client/template_js/files.js" />
-        <option value="$PROJECT_DIR$/client/templates/files.html" />
         <option value="$PROJECT_DIR$/client/templates/home.html" />
         <option value="$PROJECT_DIR$/server/permissions.js" />
         <option value="$PROJECT_DIR$/client/template_js/users_list.js" />
@@ -947,15 +191,23 @@
         <option value="$PROJECT_DIR$/client/templates/layout.html" />
         <option value="$PROJECT_DIR$/packages/gapitoken/.gitignore" />
         <option value="$PROJECT_DIR$/smart.json" />
+        <option value="$PROJECT_DIR$/server/users.js" />
+        <option value="$PROJECT_DIR$/client/js/client.js" />
+        <option value="$PROJECT_DIR$/client/templates/edit_file.html" />
+        <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
+        <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
+        <option value="$PROJECT_DIR$/client/css/main.css" />
+        <option value="$PROJECT_DIR$/client/templates/users_list.html" />
+        <option value="$PROJECT_DIR$/client/css/table.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1312" />
-    <option name="y" value="105" />
-    <option name="width" value="1307" />
-    <option name="height" value="714" />
+    <option name="x" value="-1317" />
+    <option name="y" value="24" />
+    <option name="width" value="1317" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1263,7 +515,7 @@
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -1280,16 +532,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1312" y="105" width="1307" height="714" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1317" y="24" width="1317" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27640983" sideWeight="0.74539363" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940991" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27537373" sideWeight="0.8835726" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27537373" sideWeight="0.11642743" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1363,85 +615,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/template_js/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/files.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/files.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="55" vertical-scroll-proportion="-0.0">
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/permissions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="15" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/edit_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="59" selection-start="752" selection-end="752" vertical-scroll-proportion="20.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="6" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="18" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/users_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="6" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/template_js/files_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="6" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
@@ -1458,10 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="24" selection-start="3157" selection-end="3157" vertical-scroll-proportion="-14.375">
-          <folding>
-            <element signature="n#style#0;n#i#1;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#2;n#!!top" expanded="true" />
-          </folding>
+        <state line="72" column="24" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,7 +645,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smart.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="581" selection-end="581" vertical-scroll-proportion="0.5734407">
+        <state line="6" column="24" selection-start="140" selection-end="140" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/collections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/utilities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="3" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/template_js/edit_file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/edit_file.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="861" selection-end="861" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/models/UserModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="6" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="10846" selection-start="39893" selection-end="39893" vertical-scroll-proportion="-12.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="34" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="19" selection-start="749" selection-end="749" vertical-scroll-proportion="0.67241377">
           <folding />
         </state>
       </provider>

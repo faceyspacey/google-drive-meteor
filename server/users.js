@@ -4,6 +4,31 @@ Meteor.publish("users", function (){
     else return Meteor.users.find({_id: this.userId});
 });
 
+//
+Meteor.startup(function(){
+    if( Meteor.users.find().count() === 0 ){
+        var defaultUsers = [
+            {
+                _id: 'systememail',
+                emails: [{address: '709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com', verified: true}],
+                profiles: {
+                    email: '709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com',
+                    family_name: "Documents",
+                    gender: "male",
+                    given_name: "Sequencia",
+                    locale: "us",
+                    name: "Sequencia Documents",
+                    verified_email: true
+                }
+            }
+        ];
+        for(var i = 0; i < defaultUsers.length; i++){
+            Meteor.users.insert(defaultUsers[i]);
+        }
+    }
+});
+
+
 
 Meteor.users.allow({
     insert: function(userId, doc) {

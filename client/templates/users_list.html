@@ -31,7 +31,7 @@
 </template>
 
 <template name="user_row_home">
-    <tr>
+    <tr class="{{#if isAdmin}}admin-user-row{{/if}}">
         <td class="avatar-column"><img class="user-row-avatar" src="{{getAvatar}}" /></td>
         <td>{{getFirstName}}</td>
         <td>{{getLastName}}</td>
@@ -48,7 +48,7 @@
 </template>
 
 <template name="user_row_file">
-    <tr>
+    <tr class="{{#if isAdmin}}admin-user-row{{/if}}">
         <td class="avatar-column"><img class="user-row-avatar" src="{{getAvatar}}" /></td>
         <td>{{getFirstName}}</td>
         <td>{{getLastName}}</td>

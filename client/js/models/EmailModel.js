@@ -24,6 +24,10 @@ EmailModel = function(doc) {
         return this.roles && this.roles[0] ? this.roles[0] : 'customer';
     };
 
+    this.isAdmin = function(){
+        return (this.roles && this.roles[0] == 'admin');
+    };
+
     this.getAttr = function(attr){
         return this.profile && this.profile[attr] ? this.profile[attr] : ' - ';
     };

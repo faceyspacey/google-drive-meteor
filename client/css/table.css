@@ -19,6 +19,22 @@
     background-position: right;
 }
 
+
+tr.admin-user-row td.avatar-column{
+    background:rgba(77,119,204,0.3)!important;
+}
+
+tr.admin-user-row td.avatar-column div{
+    color: white !important;
+    background-color: #335eb2 !important;
+    height: 12px;
+    line-height: 12px;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 36px;
+}
+
 .table td {
     padding: 4px 8px !important;
     line-height: 30px !important;
@@ -69,6 +85,10 @@ img.user-row-avatar {
     max-width: 36px;
     max-height: 36px;
     margin: 2px;
+}
+tr.admin-user-row  img.user-row-avatar {
+    margin: 0;
+    border: 2px solid #335eb2;
 }
 img.file-row-icon {
     max-width: 16px;

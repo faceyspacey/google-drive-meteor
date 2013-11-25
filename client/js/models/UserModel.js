@@ -25,12 +25,17 @@ UserModel = function(doc){
     };
     this.is_active = true;
 
+
     this.getEmail = function(){
         return this.profile && this.profile.email ? this.profile.email : 'no email address';
     };
 
     this.getRole = function(){
         return this.roles && this.roles[0] ? this.roles[0] : 'customer';
+    };
+
+    this.isAdmin = function(){
+        return Roles.userIsInRole(this._id, ['admin']);
     };
 
     this.getAttr = function(attr){
