@@ -1,5 +1,7 @@
 <template name="page_files">
-    {{>copy_to_clipboard}}
+    {{#if isInRole 'admin'}}
+        {{>copy_to_clipboard}}
+    {{/if}}
 
     {{>files_list }}
 </template>

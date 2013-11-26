@@ -75,6 +75,7 @@
                         <li class="{{isCurrent 'users'}}"><a href="javascript: Router.go('users');"> <i class="fa fa-angle-right"></i> All Users </a> </li>
                         <li class="{{isCurrent 'onlyAdmins'}}"><a href="javascript: Router.go('onlyAdmins');"> <i class="fa fa-angle-right"></i> Admins <span class="label label-info pull-right">{{adminsCount}}</span> </a> </li>
                         <li class="{{isCurrent 'onlyCustomers'}}"><a href="javascript: Router.go('onlyCustomers');"> <i class="fa fa-angle-right"></i> Customers <span class="label label-info pull-right">{{customersCount}}</span> </a> </li>
+                        <li class="{{isCurrent 'onlyUnverified'}}"><a href="javascript: Router.go('onlyUnverified');"> <i class="fa fa-angle-right"></i> Unverified Users <span class="label label-info pull-right">{{unverifiedCount}}</span> </a> </li>
                     </ul>
                 </li>
                 {{/if}}

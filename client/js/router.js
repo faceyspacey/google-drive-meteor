@@ -6,6 +6,18 @@ Router.configure({
     },
     waitOn: function () {
         return Meteor.subscribe('users');
+    },
+    before: function(){
+
+        if( Meteor.user() && ['forbidden', 'nodocuments'].indexOf(Router.current().route.name) < 0 ){
+            if( Meteor.user().verified_user == false && Router.current().route.name != 'forbidden'){
+                Router.go('forbidden');
+                return this.stop();
+            }else if( !Meteor.user().isAdmin() && Router.current().route.name != 'nodocuments' && Files.find().count() == 0 ){
+                Router.go('nodocuments');
+                return this.stop();
+            }
+        }
     }
 });
 
@@ -23,6 +35,22 @@ Router.map(function () {
         template: 'page_home',
         waitOn: function(){
             return Session.set('page_title', 'Sequencia Documents Publisher');
+        },
+        data: {}
+    });
+    this.route('forbidden', {
+        path: '/forbidden',
+        template: 'page_system_message',
+        waitOn: function(){
+            return Session.set('page_title', 'You do not have access to private Sequencia Technologies documents. We have sent a request for access on your behalf.');
+        },
+        data: {}
+    });
+    this.route('nodocuments', {
+        path: '/nodocuments',
+        template: 'page_system_message',
+        waitOn: function(){
+            return Session.set('page_title', 'You have not been granted access to any private Sequencia Technologies documents. Please email us to request access.');
         },
         data: {}
     });
@@ -84,5 +112,13 @@ Router.map(function () {
             return Session.set('page_title', 'Customers');
         },
         data: function(){ return {parameters: {type: 'both', role: 'customer'}}; }
+    });
+    this.route('onlyUnverified', {
+        path: '/users/unverified',
+        template: 'page_users',
+        waitOn: function(){
+            return Session.set('page_title', 'Unverified users');
+        },
+        data: function(){ return {parameters: {type: 'user', role: 'both', unverified: true}}; }
     });
 });

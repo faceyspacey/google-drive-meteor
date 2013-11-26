@@ -13,8 +13,8 @@
                     <th class="actions-column">Actions</th>
                 </thead>
                 <tbody>
-                {{#if usersCount listParams}}
-                    {{#each users listParams}}
+                {{#if usersCount this}}
+                    {{#each users this}}
                         {{#if ../file_id}}
                             {{>user_row_file}}
                         {{else}}
@@ -43,7 +43,12 @@
             <div class="btn btn-default btn-sm" disabled="disabled">Inactive</div>
             {{/if}}
         </td>
-        <td class="actions-column"><div class="btn btn-default btn-sm edit-user-btn">Edit User</div></td>
+        <td class="actions-column">
+            <div class="btn btn-default btn-sm edit-user-btn">Edit User</div>
+            {{#unless verified_user}}
+                <div class="btn btn-primary btn-sm verify-user-btn" >Verify</div>
+            {{/unless}}
+        </td>
     </tr>
 </template>
 
@@ -78,6 +83,6 @@
 
 <template name="empty_user_row">
     <tr>
-        <td colspan="5"> No matching records found. </td>
+        <td colspan="6"> No matching records found. </td>
     </tr>
 </template>

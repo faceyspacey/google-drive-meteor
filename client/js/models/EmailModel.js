@@ -9,12 +9,18 @@
  */
 
 EmailModel = function(doc) {
+    _.extend(this, Model);
     this.collectionName ='Emails';
     this.defaultValues = {
         model_type: 'email'
     };
     this.is_active = false;
+    this.verified_user = true;
 
+    this.afterInsert = function(){
+        var email = Emails.findOne(this._id);
+        return Meteor.call('sendWelcomeEmail', email.getEmail());
+    };
 
     this.getEmail = function(){
         return this.email ? this.email : 'no email address';
@@ -111,7 +117,6 @@ EmailModel = function(doc) {
         return true;
     }
 
-    _.extend(this, Model);
     this.extend(doc);
 
     return this;

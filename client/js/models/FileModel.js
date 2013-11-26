@@ -16,6 +16,7 @@
  */
 
 FileModel = function(doc) {
+    _.extend(this, Model);
     this.collectionName ='Files';
     this.defaultValues = {};
 
@@ -30,7 +31,6 @@ FileModel = function(doc) {
             return data != undefined ? parseInt(data) : 0;
     }
 
-    _.extend(this, Model);
     this.extend(doc);
 
     return this;

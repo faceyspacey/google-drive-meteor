@@ -61,8 +61,8 @@ Accounts.onCreateUser(function(options, user){
     var adminEmails = [
         "sequenciadocuments@gmail.com",
         "jamesgillmore@gmail.com",
-        "james@faceyspacey.com",
-        "90.matheus@gmail.com"
+        "90.matheus@gmail.com",
+        "whitcook@gmail.com"
     ];
     var accessToken = user.services.google.accessToken,
         result,
@@ -84,9 +84,17 @@ Accounts.onCreateUser(function(options, user){
         new_user.roles = ['admin'];
     }else{
         var email = Emails.findOne({email: user.services.google.email});
-        if( email && email.profile.role == 'admin' )
-            Roles.addUsersToRoles(new_user._id, ['admin']);
-            new_user.roles = ['admin'];
+        if( email && email.roles && ['customer', 'admin'].indexOf(email.roles[0]) > -1 ){
+            Roles.addUsersToRoles(new_user._id, [email.roles[0]]);
+            new_user.roles = [email.roles[0]];
+        }else{
+            Roles.addUsersToRoles(new_user._id, ['customer']);
+            new_user.roles = ['customer'];
+        }
+        if( email )
+            new_user.verified_user = true;
+        else
+            new_user.verified_user = false;
     }
 
     /*else{

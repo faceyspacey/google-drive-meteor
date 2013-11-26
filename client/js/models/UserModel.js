@@ -19,12 +19,19 @@
 
 
 UserModel = function(doc){
+    _.extend(this, Model);
     this.collectionName = 'Users';
     this.defaultValues = {
         model_type: 'user'
     };
     this.is_active = true;
 
+    this.verify = function(){
+        var self = this;
+        return this.save({verified_user: true}, function(){
+            Meteor.call('sendWelcomeEmail', self.profile.email);
+        });
+    };
 
     this.getEmail = function(){
         return this.profile && this.profile.email ? this.profile.email : 'no email address';
@@ -121,7 +128,6 @@ UserModel = function(doc){
         return true;
     }
 
-    _.extend(this, Model);
     this.extend(doc);
 
     return this;

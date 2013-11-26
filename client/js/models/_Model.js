@@ -8,22 +8,24 @@ Model = {
             case 'Users':           return Meteor.users;
         }
     },
-    save: function(attributes){
+    save: function(attributes, cb){
         if(this._id) this.collection().update(this._id, {$set: attributes});
         else {
             var insertValues = this.prepareDefaults(attributes);
-            console.log(this.collectionName, insertValues);
+            //console.log(this.collectionName, insertValues);
             this._id = this.collection().insert(insertValues);
-
             if(this._id) this.afterInsert();
         }
+
+        if(_.isFunction(cb))
+            cb();
+
         return this._id;
     },
     refresh: function(){
         this.extend(this.collection().findOne(this._id));
     },
     afterInsert: function() {
-
     },
     prepareDefaults: function(attributes){
         var object = {};

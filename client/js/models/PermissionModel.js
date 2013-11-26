@@ -11,11 +11,11 @@
  */
 
 PermissionModel = function(doc) {
+    _.extend(this, Model);
     this.collectionName ='Permissions';
     this.defaultValues = {};
 
 
-    _.extend(this, Model);
     this.extend(doc);
 
     return this;
