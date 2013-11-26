@@ -11,7 +11,7 @@ Meteor.startup(function(){
             {
                 _id: 'systememail',
                 emails: [{address: '709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com', verified: true}],
-                profiles: {
+                profile: {
                     email: '709748832761-bmeg5fvet775tvluqbasa0rrgdhfb4m6@developer.gserviceaccount.com',
                     family_name: "Documents",
                     gender: "male",
@@ -19,11 +19,14 @@ Meteor.startup(function(){
                     locale: "us",
                     name: "Sequencia Documents",
                     verified_email: true
-                }
+                },
+                roles: ['admin']
             }
         ];
         for(var i = 0; i < defaultUsers.length; i++){
-            Meteor.users.insert(defaultUsers[i]);
+            var id = Meteor.users.insert(defaultUsers[i]);
+            if( defaultUsers[i].roles[0] == 'admin' )
+                Roles.addUsersToRoles(id, ['admin'])
         }
     }
 });
@@ -82,6 +85,7 @@ Accounts.onCreateUser(function(options, user){
     if( adminEmails.indexOf(user.services.google.email) > -1 ){
         Roles.addUsersToRoles(new_user._id, ['admin']);
         new_user.roles = ['admin'];
+        new_user.verified_user = true;
     }else{
         var email = Emails.findOne({email: user.services.google.email});
         if( email && email.roles && ['customer', 'admin'].indexOf(email.roles[0]) > -1 ){

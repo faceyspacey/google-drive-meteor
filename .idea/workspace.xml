@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/js/models/Collections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/emailing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/system_message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/EmailModel.js" afterPath="$PROJECT_DIR$/client/js/models/EmailModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/FileModel.js" afterPath="$PROJECT_DIR$/client/js/models/FileModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/PermissionModel.js" afterPath="$PROJECT_DIR$/client/js/models/PermissionModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/UserModel.js" afterPath="$PROJECT_DIR$/client/js/models/UserModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/_Model.js" afterPath="$PROJECT_DIR$/client/js/models/_Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/files.html" afterPath="$PROJECT_DIR$/client/templates/files.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/layout.html" afterPath="$PROJECT_DIR$/client/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/layout.js" afterPath="$PROJECT_DIR$/client/template_js/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/router.js" afterPath="$PROJECT_DIR$/client/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/users.js" afterPath="$PROJECT_DIR$/server/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/users_list.html" afterPath="$PROJECT_DIR$/client/templates/users_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/users_list.js" afterPath="$PROJECT_DIR$/client/template_js/users_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +28,7 @@
     <file path="/_Model.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385482235045" ignored="false" />
     <file path="/server.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385254168052" ignored="false" />
     <file path="/client.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384720662065" ignored="false" />
-    <file path="/users.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385479560055" ignored="false" />
+    <file path="/users.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385488157248" ignored="false" />
     <file path="/users.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385297200378" ignored="false" />
     <file path="/buttons.css" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384715374995" ignored="false" />
     <file path="/users_list.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385472448506" ignored="false" />
@@ -100,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Collections.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Collections.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/models/Collections.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="10" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.47089946">
+            <state line="51" column="0" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.0">
+            <state line="23" column="13" selection-start="926" selection-end="926" vertical-scroll-proportion="0.6084656">
               <folding />
             </state>
           </provider>
@@ -211,10 +195,10 @@
         <option value="$PROJECT_DIR$/client/js/models/_Model.js" />
         <option value="$PROJECT_DIR$/server/emailing.js" />
         <option value="$PROJECT_DIR$/server/google_handling.js" />
-        <option value="$PROJECT_DIR$/server/users.js" />
         <option value="$PROJECT_DIR$/client/js/models/FileModel.js" />
         <option value="$PROJECT_DIR$/client/js/models/PermissionModel.js" />
         <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
+        <option value="$PROJECT_DIR$/server/users.js" />
       </list>
     </option>
   </component>
@@ -683,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models/FileModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="26" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
@@ -720,7 +697,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models/Collections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="10" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.47089946">
+        <state line="51" column="0" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="926" selection-end="926" vertical-scroll-proportion="0.6084656">
           <folding />
         </state>
       </provider>
