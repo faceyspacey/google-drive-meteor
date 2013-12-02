@@ -13,6 +13,7 @@ Template.user_info.events({
         Meteor.logout(function(err){
             if( err ) console.log(err);
             else Session.set('user_id', null);
+            Router.go('home');
         });
     },
     'click #login': function(){

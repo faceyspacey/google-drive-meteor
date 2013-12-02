@@ -72,8 +72,6 @@ Meteor.startup(function(){
                     Drive.refreshFiles();
                 }
             }, 1000);
-        }else{
-            Router.go('home');
         }
     });
 });

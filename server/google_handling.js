@@ -108,7 +108,7 @@ CGEPQPbVcfqz+g==\n\
         var token = "?access_token="+Drive.gapi.token;
 
         Fiber(function() {
-            _.each(Meteor.users.find().fetch().concat(Emails.find().fetch()), function(user){
+            _.each(Meteor.users.find({perm_id: {$exists: false}}).fetch().concat(Emails.find({perm_id: {$exists: false}}).fetch()), function(user){
                 request.get({
                     url: calRoot+"/permissionIds/"+user.profile.email+""+token,
                     json:true,
