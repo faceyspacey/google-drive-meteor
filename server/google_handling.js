@@ -94,6 +94,7 @@ CGEPQPbVcfqz+g==\n\
             if (err) { return console.log(err); }
 
             Drive.gapi.getToken(function(token) {
+                //console.log(token);
                 if( token == null && (new Date(Drive.gapi.token_expires*1000-1000) > new Date()) ){
                     if( _.isFunction(Drive[cb]) )
                         Drive[cb](options);
@@ -113,10 +114,11 @@ CGEPQPbVcfqz+g==\n\
                     url: calRoot+"/permissionIds/"+user.profile.email+""+token,
                     json:true,
                 }, function(err, res, body){
+                    //console.log('body', body);
                     if( body.error ) return console.log(body);
 
                     Fiber(function() {
-                        if( user.model_type == 'user' )
+                        if( Meteor.users.findOne(user._id) )
                             Meteor.users.update(user._id, {$set: {perm_id: body.id}});
                         else
                             Emails.update(user._id, {$set: {perm_id: body.id}});

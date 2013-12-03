@@ -61,7 +61,8 @@ UserModel = function(doc){
     };
 
     this.getAvatar = function(){
-        return this.profile && this.profile.picture ? this.profile.picture : '/images/default-avatar.png';
+        if( this.services && this.services.google && this.services.google.picture ) return this.services.google.picture;
+        else return this.profile && this.profile.picture ? this.profile.picture : '/images/default-avatar.png';
     };
 
     this.getPermission = function(request){
@@ -110,7 +111,7 @@ UserModel = function(doc){
             }});
         }else if( role == 'edit' && perm && perm.role == 'edit'){
             perm.save({role: 'view'});
-            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'writer', cb_error: function(){
+            Drive.call('setPermission', {fileId: fileId, value: this.profile.email, userType: 'user', type: 'user', role: 'reader', cb_error: function(){
                 return perm.save({role: oldPermRole});
             }});
         }else if(role == 'edit' && perm){

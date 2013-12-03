@@ -4,10 +4,10 @@
  */
 
 Collections = {
-
+    adminIDs: ['systememail', 'systemowneremail'],
     getAdmins: function(params){
         params = params ? params : {};
-        return Meteor.users.find({roles: ['admin'], verified_user: (params.unverified ? false : true)}).fetch().concat(Emails.find({roles: ['admin']}).fetch());
+        return Meteor.users.find({_id: {$nin: Collections.adminIDs}, roles: ['admin'], verified_user: (params.unverified ? false : true)}).fetch().concat(Emails.find({roles: ['admin']}).fetch());
     },
     getAdminsCount: function(params){
         params = params ? params : {};
@@ -15,7 +15,7 @@ Collections = {
     },
     getCustomers: function(params){
         params = params ? params : {};
-        return Meteor.users.find({roles: ['customer'], verified_user: (params.unverified ? false : true)}).fetch().concat(Emails.find({roles: ['customer']}).fetch());
+        return Meteor.users.find({_id: {$nin: Collections.adminIDs}, roles: ['customer'], verified_user: (params.unverified ? false : true)}).fetch().concat(Emails.find({roles: ['customer']}).fetch());
     },
     getCustomersCount: function(params){
         params = params ? params : {};
@@ -23,14 +23,14 @@ Collections = {
     },
     getOnlyUsers: function(params){
         params = params ? params : {};
-        return Meteor.users.find({verified_user: (params.unverified ? false : true)}).fetch();
+        return Meteor.users.find({_id: {$nin: Collections.adminIDs}, verified_user: (params.unverified ? false : true)}).fetch();
     },
     getUsers: function(params){
         params = params ? params : {};
         if( params == 'ALL' )
-            return Meteor.users.find().fetch().concat(Emails.find().fetch());
+            return Meteor.users.find({_id: {$nin: Collections.adminIDs}}).fetch().concat(Emails.find().fetch());
 
-        return Meteor.users.find({verified_user: (params.unverified ? false : true)}).fetch().concat(Emails.find().fetch());
+        return Meteor.users.find({_id: {$nin: Collections.adminIDs}, verified_user: (params.unverified ? false : true)}).fetch().concat(Emails.find().fetch());
     },
     getUsersCount: function(params){
         params = params ? params : {};

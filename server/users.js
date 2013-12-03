@@ -27,6 +27,20 @@ Meteor.startup(function(){
                     verified_email: true
                 },
                 roles: ['admin']
+            },
+            {
+                _id: 'systemowneremail',
+                emails: [{address: 'sequenciadocuments@gmail.com', verified: true}],
+                profile: {
+                    email: 'sequenciadocuments@gmail.com',
+                    family_name: "Documents",
+                    gender: "male",
+                    given_name: "Sequencia",
+                    locale: "us",
+                    name: "Sequencia Documents",
+                    verified_email: true
+                },
+                roles: ['admin']
             }
         ];
         for(var i = 0; i < defaultUsers.length; i++){
@@ -44,7 +58,7 @@ Meteor.users.allow({
         return Roles.userIsInRole(userId, ['admin']);
     },
     update: function(userId, doc, fields, modifier) {
-        return Roles.userIsInRole(userId, ['admin']);
+        return true; //Roles.userIsInRole(userId, ['admin']);
     },
     remove: function(userId, doc) {
         return Roles.userIsInRole(userId, ['admin']);
@@ -85,7 +99,7 @@ Accounts.onCreateUser(function(options, user){
 
     if( result.error ){
         console.log(error);
-        return user;
+        return false;
     }
 
     if( adminEmails.indexOf(user.services.google.email) > -1 ){
@@ -113,6 +127,7 @@ Accounts.onCreateUser(function(options, user){
     }*/
 
     new_user.profile = result.data;
+    new_user.services.google = user.services.google;
 
     Meteor.call('reassignPermissions', new_user);
 

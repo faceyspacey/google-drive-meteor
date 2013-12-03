@@ -16,7 +16,7 @@
                     <th class="sortable {{sorted 'title'}}" data-field="title">Title</th>
                     <th class="sortable {{sorted 'size'}}" data-field="size">Size</th>
                     <th class="sortable {{sorted 'createdDate'}}" data-field="createdDate">Created Date</th>
-                    <th class="actions-column">Actions</th>
+                    <th class="actions-column">{{#if user_id}}Permissions{{else}}Actions{{/if}}</th>
                 </thead>
                 <tbody>
                 {{#if filesCount null}}

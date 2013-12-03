@@ -19,6 +19,8 @@ Template.user_info.events({
     'click #login': function(){
         Meteor.loginWithGoogle({
             requestPermissions: ['openid', 'profile', 'email', 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile']
+        }, function(){
+
         });
     }
 });

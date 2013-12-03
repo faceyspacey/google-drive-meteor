@@ -10,7 +10,7 @@
                     <th class="sortable {{sorted 'getLastName'}}" data-field="getLastName">Last Name</th>
                     <th class="sortable {{sorted 'getEmail'}}" data-field="getEmail">Email</th>
                     <th class="status-column">Status</th>
-                    <th class="actions-column">Actions</th>
+                    <th class="actions-column">{{#if file_id}}Permissions{{else}}Actions{{/if}}</th>
                 </thead>
                 <tbody>
                 {{#if usersCount this}}

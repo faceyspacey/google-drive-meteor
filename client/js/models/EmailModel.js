@@ -99,7 +99,7 @@ EmailModel = function(doc) {
             }});
         }else if( role == 'edit' && perm && perm.role == 'edit'){
             perm.save({role: 'view'});
-            Drive.call('setPermission', {fileId: fileId, value: this.email, userType: 'email', type: 'user', role: 'writer', cb_error: function(){
+            Drive.call('setPermission', {fileId: fileId, value: this.email, userType: 'email', type: 'user', role: 'reader', cb_error: function(){
                 return perm.save({role: oldPermRole});
             }});
         }else if(role == 'edit' && perm){
