@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3c068e3-e2c2-4d50-817c-ab029cafa02d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/Collections.js" afterPath="$PROJECT_DIR$/client/js/models/Collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/EmailModel.js" afterPath="$PROJECT_DIR$/client/js/models/EmailModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models/UserModel.js" afterPath="$PROJECT_DIR$/client/js/models/UserModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/edit_user.css" afterPath="$PROJECT_DIR$/client/css/edit_user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/edit_user.html" afterPath="$PROJECT_DIR$/client/templates/edit_user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/edit_user.js" afterPath="$PROJECT_DIR$/client/template_js/edit_user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/files_list.html" afterPath="$PROJECT_DIR$/client/templates/files_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/google_handling.js" afterPath="$PROJECT_DIR$/server/google_handling.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/layout.html" afterPath="$PROJECT_DIR$/client/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/template_js/user_info.js" afterPath="$PROJECT_DIR$/client/template_js/user_info.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/users.js" afterPath="$PROJECT_DIR$/server/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/users_list.html" afterPath="$PROJECT_DIR$/client/templates/users_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seqinc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1386104907516" ignored="false" />
+    <file path="/Dummy.txt" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1386112306579" ignored="false" />
     <file path="/user_info.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1386071441861" ignored="false" />
     <file path="/user_info.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384609915012" ignored="false" />
     <file path="/a.dummy" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1384705429861" ignored="false" />
@@ -54,7 +43,7 @@
     <file path="/gapitoken.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385289511374" ignored="false" />
     <file path="/package.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385288557254" ignored="false" />
     <file path="/edit_user.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1386107974274" ignored="false" />
-    <file path="/edit_user.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1386107570748" ignored="false" />
+    <file path="/edit_user.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1386109714759" ignored="false" />
     <file path="/files.html" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385469715191" ignored="false" />
     <file path="/jquery.zclip.js" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385299843113" ignored="false" />
     <file path="/.gitignore" changelist="f3c068e3-e2c2-4d50-817c-ab029cafa02d" time="1385324494772" ignored="false" />
@@ -99,10 +88,8 @@
       <file leaf-file-name="edit_user.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/edit_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="529" selection-end="529" vertical-scroll-proportion="-7.5">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="12" column="32" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +106,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_handling.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="google_handling.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/google_handling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="38" selection-start="8181" selection-end="8181" vertical-scroll-proportion="0.18518518">
+            <state line="229" column="38" selection-start="8181" selection-end="8181" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,7 +133,7 @@
       <file leaf-file-name="table.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/css/table.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="33" selection-start="286" selection-end="286" vertical-scroll-proportion="-6.2">
+            <state line="12" column="33" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,7 +142,7 @@
       <file leaf-file-name="edit_user.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/template_js/edit_user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+            <state line="19" column="56" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,10 +157,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="3" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.0">
+            <state line="60" column="53" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.3968254">
               <folding />
             </state>
           </provider>
@@ -209,17 +196,17 @@
         <option value="$PROJECT_DIR$/client/templates/layout.html" />
         <option value="$PROJECT_DIR$/client/js/models/EmailModel.js" />
         <option value="$PROJECT_DIR$/client/js/models/UserModel.js" />
-        <option value="$PROJECT_DIR$/server/users.js" />
         <option value="$PROJECT_DIR$/client/templates/edit_user.html" />
-        <option value="$PROJECT_DIR$/client/template_js/edit_user.js" />
         <option value="$PROJECT_DIR$/client/css/edit_user.css" />
+        <option value="$PROJECT_DIR$/client/template_js/edit_user.js" />
+        <option value="$PROJECT_DIR$/server/users.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="792" />
+    <option name="x" value="-1317" />
+    <option name="y" value="24" />
     <option name="width" value="1317" />
     <option name="height" value="744" />
   </component>
@@ -528,14 +515,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="792" width="1317" height="744" extended-state="6" />
+    <frame x="-1317" y="24" width="1317" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940991" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28638867" sideWeight="0.8835726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29189613" sideWeight="0.8835726" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27537373" sideWeight="0.11642743" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -613,46 +600,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/js/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="21" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="64" column="21" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/users_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="39" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="39" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/files_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="12" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="41" column="12" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models/Collections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="38" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/template_js/user_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="32" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="24" selection-start="4538" selection-end="4538" vertical-scroll-proportion="-15.625">
-          <folding>
-            <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#0;n#div#0;n#template#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="91" column="24" selection-start="4538" selection-end="4538" vertical-scroll-proportion="-15.625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models/EmailModel.js">
@@ -671,7 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -685,31 +658,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/css/table.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="286" selection-end="286" vertical-scroll-proportion="-6.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="3" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/template_js/edit_user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+        <state line="12" column="33" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/edit_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="529" selection-end="529" vertical-scroll-proportion="-7.5">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="12" column="32" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +679,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/google_handling.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="38" selection-start="8181" selection-end="8181" vertical-scroll-proportion="0.18518518">
+        <state line="229" column="38" selection-start="8181" selection-end="8181" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/template_js/edit_user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="53" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.3968254">
           <folding />
         </state>
       </provider>
