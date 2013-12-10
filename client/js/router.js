@@ -9,6 +9,11 @@ Router.configure({
     },
     before: function(){
 
+        if( !Meteor.user() ){
+            this.render('please_login');
+            this.stop();
+        }
+
         if( '/home/welcome' == Router.current().route.originalPath ){
             Meteor.logout(function(){
                 Router.go('home');
