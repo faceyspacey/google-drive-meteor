@@ -4,3 +4,7 @@
     margin-top: 3px;
     margin-right: 0px;
 }
+
+#refresh-list-btn {
+    border:1px solid #9b9b9b;
+}

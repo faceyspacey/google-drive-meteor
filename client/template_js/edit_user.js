@@ -17,7 +17,7 @@ Template.page_edit_user.helpers({
 
 Template.page_edit_user.events({
     'click .save-user-btn': function(e){
-        if( ['customer', 'admin'].indexOf($('#userAddForm_role').val()) == -1 )
+        if( ['customer', 'admin'].indexOf($('#userUpdateForm_role').val()) == -1 )
             return alert('This role does not exists in the system.');
 
         var container = $('#edit-user-profile-right-cont');
@@ -29,7 +29,7 @@ Template.page_edit_user.events({
 
             if( user ){
                 Roles.removeUsersFromRoles(user._id, ['customer', 'admin']);
-                Roles.addUsersToRoles(user._id, [$('#userAddForm_role').val()]);
+                Roles.addUsersToRoles(user._id, [$('#userUpdateForm_role').val()]);
             }
         }else{
             var email = Emails.findOne(this.user_id);

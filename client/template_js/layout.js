@@ -12,8 +12,12 @@ Template.layout.helpers({
 Template.layout.events({
     'click .toggle-sidebar': function(){
         $('#container').toggleClass('sidebar-closed');
+        return false;
     }
 });
+Template.layout.rendered = function(){
+    console.log('layout rendered');
+};
 
 
 /** navbar_left HELPERS, EVENTS & CALLBACKS **/

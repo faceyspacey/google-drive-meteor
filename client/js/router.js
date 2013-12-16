@@ -35,7 +35,7 @@ Router.map(function () {
         path: '/',
         template: 'page_home',
         waitOn: function(){
-            return Meteor.subscribe('users') && Session.set('page_title', 'Sequencia Documents Publisher');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Home');
         },
         data: {}
     });
@@ -43,7 +43,7 @@ Router.map(function () {
         path: '/home',
         template: 'page_home',
         waitOn: function(){
-            return Meteor.subscribe('users') && Session.set('page_title', 'Sequencia Documents Publisher');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Home');
         },
         data: {}
     });
@@ -51,7 +51,15 @@ Router.map(function () {
         path: '/home/welcome',
         template: 'page_home',
         waitOn: function(){
-            return Meteor.subscribe('users') && Session.set('page_title', 'Sequencia Documents Publisher');
+            return Meteor.subscribe('users') && Session.set('page_title', 'Home');
+        },
+        data: {}
+    });
+    this.route('help', {
+        path: '/help',
+        template: 'page_help',
+        waitOn: function(){
+            return Meteor.subscribe('users') && Session.set('page_title', 'Help');
         },
         data: {}
     });
@@ -70,6 +78,19 @@ Router.map(function () {
             return Meteor.subscribe('users') && Session.set('page_title', 'You have not been granted access to any private Sequencia Technologies documents. Please email us to request access.');
         },
         data: {}
+    });
+    this.route('myAccount', {
+        path: '/myAccount',
+        template: 'page_edit_user',
+        waitOn: function(){
+            return Meteor.subscribe('users') && Session.set('page_title', 'My Account');
+        },
+        data: function(){
+            return {
+                user_id: Roles.userIsInRole(Meteor.userId(), ['admin']) ? Meteor.userId() : false,
+                model_type: 'user'
+            };
+        }
     });
     this.route('editUser', {
         path: '/editUser/:user_id/:model_type',
@@ -138,4 +159,10 @@ Router.map(function () {
         },
         data: function(){ return {parameters: {type: 'user', role: 'both', unverified: true}}; }
     });
+});
+
+Handlebars.registerHelper('isRouteName', function(name){
+    if( !Router.current() ) return false;
+
+    return Router.current().route.name === name;
 });

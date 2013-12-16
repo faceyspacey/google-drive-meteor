@@ -29,6 +29,7 @@
                                 <th>Gender:</th>
                                 <td>{{user.getAttr 'gender'}}</td>
                             </tr>
+                            {{#if isInRole 'admin'}}
                             <tr>
                                 <th>Role:</th>
                                 <td>{{>role_select user}}</td>
@@ -38,6 +39,12 @@
                                     <div class="btn btn-primary col-md-6 col-md-offset-3 save-user-btn"> <i class="fa fa-floppy-o"></i>&nbsp; Save Profile</div>
                                 </td>
                             </tr>
+                            {{else}}
+                            <tr>
+                                <th>Role:</th>
+                                <td>{{user.getRole}}</td>
+                            </tr>
+                            {{/if}}
                         </tbody>
                     </table>
                     {{/isolate}}
@@ -56,7 +63,7 @@
 </template>
 
 <template name="role_select">
-    <select id="userAddForm_role" class="form-control">
+    <select id="userUpdateForm_role" class="form-control">
         <option value="customer" {{{isSelected 'customer'}}} >Customer</option>
         <option value="admin" {{{isSelected 'admin'}}} >Admin</option>
     </select>
